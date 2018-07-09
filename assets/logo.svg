@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="0 0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MVP" transform="translate(-624.000000, -120.000000)">
+            <g id="logo" transform="translate(624.000000, 120.000000)">
+                <path d="M32,24 C17.3333333,30 13.3333333,38 20,48 C9.25854036,43.2737578 4,39.5 4,35.5 C4,30.5 13.3333333,26.6666667 32,24 Z" id="s" fill="#4CBDE6"></path>
+                <path d="M0,24 C18.6666667,21.3333333 28,17.5 28,12.5 C28,8.5 22.7414596,4.72624224 12,0 C18.6666667,10 14.6666667,18 0,24 Z" id="z" fill="#4CE6B2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
