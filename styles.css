@@ -25,12 +25,21 @@ h1 {
 }
 
 img {
+    opacity: 1;
     vertical-align: middle;
     margin: 25px;
 }
 
+img:hover {
+    opacity: 0.8;
+}
+
 #logo {
     margin: 0px;
+}
+
+#logo:hover {
+    opacity: 1;
 }
 
 a { 
