@@ -4,6 +4,7 @@ import Nav from './components/Nav.js';
 import HomeHero from './components/HomeHero.js';
 import Projects from './components/Projects.js';
 import Visuals from './components/Visuals.js';
+import Music from  './components/Music.js';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <HomeHero/>
         <Projects/>
         <Visuals/>
+        <Music/>
       </div>
     );
   }

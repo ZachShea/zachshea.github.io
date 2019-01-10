@@ -21,6 +21,13 @@ const Title = {
   textShadow: "0 4px 30px rgba(0,0,0,0.4)"
 }
 
+const IconBounds = {
+  // height: "40px",
+  // display: "flex",
+  // flexDirection: "row",
+  // alignItems: "center"
+}
+
 class Card extends React.Component {
     render() {
       const { background = "" } = this.props;
@@ -30,7 +37,7 @@ class Card extends React.Component {
         flexDirection: "column",
         justifyContent: "center",
         // maxWidth: "510px",
-        minWidth: "315px",
+        // minWidth: "315px",
         backgroundPosition: "center",
         backgroundSize: "cover",
         borderRadius: "6px",
@@ -40,11 +47,11 @@ class Card extends React.Component {
       }
 
       return (
-        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank">
+        <a className="Card" style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank">
             <div style={Content}>
                 <div style={Description}>{this.props.description}</div>
                 <div style={Title}>{this.props.title}</div>
-                <img src={this.props.icon}/>
+                <div style={IconBounds}><img src={this.props.icon}/></div>
             </div>
         </a>
       );

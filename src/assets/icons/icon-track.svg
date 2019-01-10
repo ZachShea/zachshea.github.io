@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-track</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Desktop" transform="translate(-140.000000, -3616.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="music" transform="translate(0.000000, 3074.000000)">
+                <g id="container" transform="translate(100.000000, 102.000000)">
+                    <g id="promo-track" transform="translate(0.000000, 108.000000)">
+                        <path d="M60,372 C48.954305,372 40,363.045695 40,352 C40,340.954305 48.954305,332 60,332 C71.045695,332 80,340.954305 80,352 C80,363.045695 71.045695,372 60,372 Z M67.0372502,353.261768 C67.2180042,353.145569 67.3716826,352.99189 67.4878816,352.811136 C67.9358598,352.114281 67.7341053,351.186211 67.0372502,350.738232 L57.3111364,344.485731 C57.0691904,344.330194 56.7876274,344.247498 56.5,344.247498 C55.6715729,344.247498 55,344.919071 55,345.747498 L55,358.252502 C55,358.540129 55.0826956,358.821692 55.2382323,359.063638 C55.6862105,359.760493 56.6142813,359.962248 57.3111364,359.514269 L67.0372502,353.261768 Z" id="icon-track"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

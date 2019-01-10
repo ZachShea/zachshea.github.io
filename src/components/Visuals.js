@@ -17,7 +17,7 @@ const Container = {
   maxWidth: "1080px",
   marginLeft: "auto",
   marginRight: "auto",
-  padding: "100px"
+  padding: "130px 100px 130px 100px"
 }
 
 const Title = {
@@ -25,7 +25,6 @@ const Title = {
   fontSize: "50px",
   textAlign: "center",
   letterSpacing: "14px",
-  marginTop: "30px",
   marginBottom: "50px",
   position: "relative",
   zIndex: "1"
