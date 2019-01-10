@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
 
 import Nav from './components/Nav.js';
 import HomeHero from './components/HomeHero.js';
-import Card from './components/Card.js';
-
-import zuke from "./assets/hero-zuke.png"
+import Projects from './components/Projects.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div style={{color: "white"}}>
         <Nav/>
         <HomeHero/>
-        {/* <Card description="The Music Network" title="Zuke Music" background={zuke}/> */}
+        <Projects/>
       </div>
     );
   }

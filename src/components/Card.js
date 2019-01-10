@@ -1,12 +1,11 @@
 import React from 'react';
-import '../styles/Card.css';
 
 const Content = {
   margin: "63px 40px 63px 40px",
   position: "relative",
   zIndex: "1",
   textShadow: "0 4px 30px rgba(0,0,0,0.4)",
-  letterSpacing: "1px"
+  letterSpacing: "1px",
 }
 
 const Description = {
@@ -27,22 +26,27 @@ class Card extends React.Component {
       const { background = "" } = this.props;
       
       const Main = {
-        display: "inline-block",
-        width: "430px",
+        display: "inline-flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        maxWidth: "510px",
+        minWidth: "315px",
         backgroundPosition: "center",
         backgroundSize: "cover",
         borderRadius: "6px",
+        textDecoration: "none",
+        color: "white",
         backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(" + background + ")"
       }
 
       return (
-        <div style={Main}>
+        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank">
             <div style={Content}>
                 <div style={Description}>{this.props.description}</div>
                 <div style={Title}>{this.props.title}</div>
                 <img src={this.props.icon}/>
             </div>
-        </div>
+        </a>
       );
     }
   }

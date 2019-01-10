@@ -1,6 +1,4 @@
 import React from 'react';
-import '../styles/Nav.css';
-
 import logo from "../assets/logo.svg";
 
 const Main = {
@@ -9,7 +7,7 @@ const Main = {
 }
 
 const Container = {
-    maxWidth: "1280px",
+    maxWidth: "1080px",
     height: "100px",
     margin: "auto",
     paddingLeft: "100px",

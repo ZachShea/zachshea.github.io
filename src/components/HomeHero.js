@@ -1,12 +1,10 @@
 import React from 'react';
-import '../styles/HomeHero.css';
-
 import hero from '../assets/hero-home.jpg'
 import chevron from '../assets/icons/chevron-right.svg'
 import scrollIndicator from '../assets/icons/scroll-indicator.svg'
 
 const Container = {
-  maxWidth: "1280px",
+  maxWidth: "1080px",
   marginLeft: "auto",
   marginRight: "auto",
   paddingLeft: "100px",
@@ -51,7 +49,6 @@ class HomeHero extends React.Component {
       const Main = {
         display: "flex",
         flexDirection: "column",
-        justifyItems: "space-between",
         height: "730px",
         width: "100%",
         backgroundPosition: "center",
@@ -62,7 +59,7 @@ class HomeHero extends React.Component {
       return (
         <div style={Main}>
             <div style={Container}>
-                <div style={Title}>Digital Product Maker and Musician.</div>
+                <div style={Title}>Digital Product Maker and Musician</div>
                 <a style={Button} href="/me">
                   Get to know me<img style={Chevron} src={chevron}/>
                 </a>
