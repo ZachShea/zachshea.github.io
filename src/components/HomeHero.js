@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../assets/hero-home.jpg'
+import hero from '../assets/heros/hero-home.jpg'
 import chevron from '../assets/icons/chevron-right.svg'
 import scrollIndicator from '../assets/icons/scroll-indicator.svg'
 

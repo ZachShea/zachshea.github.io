@@ -4,7 +4,6 @@ const Content = {
   margin: "63px 40px 63px 40px",
   position: "relative",
   zIndex: "1",
-  textShadow: "0 4px 30px rgba(0,0,0,0.4)",
   letterSpacing: "1px",
 }
 
@@ -12,13 +11,14 @@ const Description = {
   fontSize: "20px",
   fontWeight: "500",
   marginBottom: "8px",
-  textShadow: "0 5px 40px black"
+  textShadow: "0 4px 30px rgba(0,0,0,0.4), 0 5px 40px black"
 }
 
 const Title = {
   fontSize: "50px",
   fontWeight: "700",
-  marginBottom: "14px"
+  marginBottom: "14px",
+  textShadow: "0 4px 30px rgba(0,0,0,0.4)"
 }
 
 class Card extends React.Component {
