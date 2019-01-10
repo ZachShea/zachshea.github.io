@@ -5,6 +5,7 @@ import HomeHero from './components/HomeHero.js';
 import Projects from './components/Projects.js';
 import Visuals from './components/Visuals.js';
 import Music from  './components/Music.js';
+import Footer from  './components/Footer.js';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Projects/>
         <Visuals/>
         <Music/>
+        <Footer/>
       </div>
     );
   }
