@@ -29,7 +29,7 @@ class Card extends React.Component {
         display: "inline-flex",
         flexDirection: "column",
         justifyContent: "center",
-        maxWidth: "510px",
+        // maxWidth: "510px",
         minWidth: "315px",
         backgroundPosition: "center",
         backgroundSize: "cover",

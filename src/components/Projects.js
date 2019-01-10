@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from './Card.js';
-import zuke from "../assets/hero-zuke.png"
-import medi from "../assets/hero-medi.png"
-import hdg from "../assets/hero-hdg.png"
-import carebit from "../assets/hero-carebit.png"
-import projects from "../assets/hero-projects.png"
+import zuke from "../assets/projects/hero-zuke.png"
+import medi from "../assets/projects/hero-medi.png"
+import hdg from "../assets/projects/hero-hdg.png"
+import carebit from "../assets/projects/hero-carebit.png"
+import projects from "../assets/projects/hero-projects.png"
 
 const Container = {
   maxWidth: "1080px",
@@ -56,6 +56,7 @@ class Projects extends React.Component {
     render() {
       const Main = {
         marginTop: "-30px",
+        marginBottom: "-30px",
         width: "100%",
         backgroundColor: "white",
         borderRadius: "30px"
