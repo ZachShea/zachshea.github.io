@@ -1,4 +1,5 @@
 import React from 'react';
+import Size from '../Size.js';
 import Card from './Card.js';
 import heroZuke from "../assets/heros/hero-zuke.png"
 import heroMedi from "../assets/heros/hero-medi.png"
@@ -10,14 +11,21 @@ import iconMedi from "../assets/icons/icon-medi.svg"
 import iconCarebit from "../assets/icons/icon-carebit.svg"
 import iconProjects from "../assets/icons/icon-projects.svg"
 
-const Container = {
+const ContainerDesktop = {
   maxWidth: "1080px",
   marginLeft: "auto",
   marginRight: "auto",
   padding: "100px"
 }
 
-const Title = {
+const ContainerDefault = {
+  maxWidth: "1080px",
+  marginLeft: "auto",
+  marginRight: "auto",
+  padding: "50px 30px 50px 30px",
+}
+
+const TitleDesktop = {
   fontSize: "50px",
   fontWeight: "700",
   letterSpacing: "1px",
@@ -25,15 +33,33 @@ const Title = {
   color: "black"
 }
 
-const Cards = {
+const TitleDefault = {
+  fontSize: "30px",
+  fontWeight: "700",
+  letterSpacing: "1px",
+  marginBottom: "20px",
+  color: "black"
+}
+
+const CardsDesktop = {
     display: "grid",
     gridGap: "60px",
     gridTemplateColumns: "repeat(2, 1fr)"
 }
 
-const Card1 = {
+const CardsDefault = {
+    display: "grid",
+    gridGap: "20px",
+}
+
+const Card1Desktop = {
     gridColumn: "1",
     gridRow: "1/3"
+}
+
+const Card1Default = {
+    paddingTop: "100px",
+    paddingBottom: "100px"
 }
 
 const Card2 = {
@@ -58,7 +84,7 @@ const Card5 = {
 
 class Projects extends React.Component {
     render() {
-      const Main = {
+      const MainDesktop = {
         marginTop: "-30px",
         marginBottom: "-30px",
         width: "100%",
@@ -66,18 +92,44 @@ class Projects extends React.Component {
         borderRadius: "30px"
       }
 
+      const MainDefault = {
+        marginTop: "-20px",
+        marginBottom: "-20px",
+        width: "100%",
+        backgroundColor: "white",
+        borderRadius: "20px"
+      }
+
       return (
-        <div style={Main}>
-            <div style={Container}>
-                <div style={Title}>Projects</div>
-                <div style={Cards}>
-                    <Card style={Card1} description="The Music Network" title="Zuke Music" background={heroZuke} icon={iconZuke} link="https://zukemusic.com"/>
-                    <Card style={Card2} description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://bostechusa.com/medi-iot.html"/>
-                    <Card style={Card3} description="Artist Portfolio Website" title="Hoekstra Design Group" background={heroHDG} link="http://www.hoekstradesigngroup.com"/>
-                    <Card style={Card4} description="Informal, Remote Caregiving" title="Coming Soon" background={heroCarebit} icon={iconCarebit}/>
-                    <Card style={Card5} description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
+        <div>
+            <Size.Desktop>
+                <div style={MainDesktop} id="projects">
+                    <div style={ContainerDesktop}>
+                        <div style={TitleDesktop}>Projects</div>
+                        <div style={CardsDesktop}>
+                            <Card style={Card1Desktop} description="The Music Network" title="Zuke Music" background={heroZuke} icon={iconZuke} link="https://zukemusic.com"/>
+                            <Card style={Card2} description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://bostechusa.com/medi-iot.html"/>
+                            <Card style={Card3} description="Artist Portfolio Website" title="Hoekstra Design Group" background={heroHDG} link="http://www.hoekstradesigngroup.com"/>
+                            <Card style={Card4} description="Informal, Remote Caregiving" title="Coming Soon" background={heroCarebit} icon={iconCarebit}/>
+                            <Card style={Card5} description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </Size.Desktop>
+            <Size.Default>
+                <div style={MainDefault} id="projects">
+                    <div style={ContainerDefault}>
+                        <div style={TitleDefault}>Projects</div>
+                        <div style={CardsDefault}>
+                            <Card style={Card1Default} description="The Music Network" title="Zuke Music" background={heroZuke} icon={iconZuke} link="https://zukemusic.com"/>
+                            <Card description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://bostechusa.com/medi-iot.html"/>
+                            <Card description="Artist Portfolio Website" title="Hoekstra Design Group" background={heroHDG} link="http://www.hoekstradesigngroup.com"/>
+                            <Card description="Informal, Remote Caregiving" title="Coming Soon" background={heroCarebit} icon={iconCarebit}/>
+                            <Card description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
+                        </div>
+                    </div>
+                </div>
+            </Size.Default>
         </div>
       );
     }

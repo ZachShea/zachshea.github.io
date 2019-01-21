@@ -46,7 +46,7 @@ class Music extends React.Component {
       }
 
       return (
-        <div style={Main}>
+        <div style={Main} id="music">
             <div style={Container}>
                 <div style={Title}>Have a Listen</div>
                 <div className="CardsList" style={Cards}>

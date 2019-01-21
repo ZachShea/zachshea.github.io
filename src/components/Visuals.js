@@ -106,7 +106,7 @@ class Projects extends React.Component {
       }
 
       return (
-        <div style={Main}>
+        <div style={Main} id="visuals">
             <div style={Container}>
                 <div style={Title}>Visual Exploration</div>
                 <div style={Rainbow}/>

@@ -37,9 +37,9 @@ class Nav extends React.Component {
                 <a style={Item} href="/"><img src={logo}/></a>
                 <div style={Item}>
                     <a style={Link} href="/">Me</a>
-                    <a style={Link} href="/">Projects</a>
-                    <a style={Link} href="/">Visuals</a>
-                    <a style={Link} href="/">Music</a>
+                    <a style={Link} href="/#projects">Projects</a>
+                    <a style={Link} href="/#visuals">Visuals</a>
+                    <a style={Link} href="/#music">Music</a>
                 </div>
             </div>
         </div>

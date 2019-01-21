@@ -1,10 +1,18 @@
 import React from 'react';
+import Size from '../Size.js';
 
-const Content = {
+const ContentDesktop = {
   margin: "63px 40px 63px 40px",
   position: "relative",
   zIndex: "1",
   letterSpacing: "1px",
+}
+
+const ContentDefault = {
+  margin: "44px 30px 44px 30px",
+  position: "relative",
+  zIndex: "1",
+  letterSpacing: ".8px",
 }
 
 const Description = {
@@ -14,8 +22,15 @@ const Description = {
   textShadow: "0 4px 30px rgba(0,0,0,0.4), 0 5px 40px black"
 }
 
-const Title = {
+const TitleDesktop = {
   fontSize: "50px",
+  fontWeight: "700",
+  marginBottom: "14px",
+  textShadow: "0 4px 30px rgba(0,0,0,0.4)"
+}
+
+const TitleDefault = {
+  fontSize: "40px",
   fontWeight: "700",
   marginBottom: "14px",
   textShadow: "0 4px 30px rgba(0,0,0,0.4)"
@@ -36,8 +51,6 @@ class Card extends React.Component {
         display: "inline-flex",
         flexDirection: "column",
         justifyContent: "center",
-        // maxWidth: "510px",
-        // minWidth: "315px",
         backgroundPosition: "center",
         backgroundSize: "cover",
         borderRadius: "6px",
@@ -47,13 +60,23 @@ class Card extends React.Component {
       }
 
       return (
-        <a className="Card" style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank">
-            <div style={Content}>
-                <div style={Description}>{this.props.description}</div>
-                <div style={Title}>{this.props.title}</div>
-                <div style={IconBounds}><img src={this.props.icon}/></div>
+        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank">
+          <Size.Desktop>
+            <div style={ContentDesktop}>
+              <div style={Description}>{this.props.description}</div>
+              <div style={TitleDesktop}>{this.props.title}</div>
+              <div style={IconBounds}><img src={this.props.icon}/></div>
             </div>
+          </Size.Desktop>
+          <Size.Default>
+            <div style={ContentDefault}>
+              <div style={Description}>{this.props.description}</div>
+              <div style={TitleDefault}>{this.props.title}</div>
+              <div style={IconBounds}><img src={this.props.icon}/></div>
+            </div>
+          </Size.Default>
         </a>
+        
       );
     }
   }
