@@ -67,7 +67,7 @@ class NavBar extends React.Component {
             </Size.Desktop>
             <Size.Default>
                 <div style={ContainerDefault}>
-                    <div style={ItemFlex}><a href="#"><img src={menu} onClick={this.props.openMenu}/></a></div>
+                    <div style={ItemFlex}><a href="javascript:void(0);"><img src={menu} onClick={this.props.openMenu}/></a></div>
                     <a style={Item} href="/"><img src={logo} style={LogoDefault}/></a>
                     <div style={ItemFlex}/>
                 </div>

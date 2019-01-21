@@ -35,7 +35,7 @@ class NavMenu extends React.Component {
       return (
         <div style={Main} id="projects">
             <div style={Container}>
-                <a href="#"><img src={menuClose} onClick={this.props.closeMenu}/></a>
+                <a href="javascript:void(0);"><img src={menuClose} onClick={this.props.closeMenu}/></a>
                 <div style={LinksList}>
                     <a style={Link} href="/">Me</a>
                     <a style={Link} href="/#projects" onClick={this.props.closeMenu}>Projects</a>
