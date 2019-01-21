@@ -4,7 +4,7 @@ import hero from '../assets/heros/hero-home.jpg'
 import chevron from '../assets/icons/chevron-right.svg'
 import scrollIndicator from '../assets/icons/scroll-indicator.svg'
 
-const ContainerDesktop = {
+const ContainerBig = {
   maxWidth: "1080px",
   marginLeft: "auto",
   marginRight: "auto",
@@ -15,7 +15,7 @@ const ContainerDesktop = {
   flexDirection: "column"
 }
 
-const ContainerDefault = {
+const ContainerMobile = {
   maxWidth: "1080px",
   marginLeft: "auto",
   marginRight: "auto",
@@ -56,7 +56,7 @@ const TitleMobile = {
   alignSelf: "center"
 }
 
-const ButtonDesktop = {
+const ButtonBig = {
   display: "flex",
   alignSelf: "center",
   alignItems: "center",
@@ -67,7 +67,7 @@ const ButtonDesktop = {
   textDecoration: "none"
 }
 
-const ButtonDefault = {
+const ButtonMobile = {
   display: "flex",
   alignSelf: "center",
   alignItems: "center",
@@ -89,7 +89,7 @@ const ScrollIndicator = {
 
 class HomeHero extends React.Component {
     render() {
-      const MainDesktop = {
+      const MainBig = {
         display: "flex",
         flexDirection: "column",
         height: "730px",
@@ -99,7 +99,7 @@ class HomeHero extends React.Component {
         backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(" + hero + ")"
       }
 
-      const MainDefault = {
+      const MainMobile = {
         display: "flex",
         flexDirection: "column",
         height: "536px",
@@ -112,10 +112,10 @@ class HomeHero extends React.Component {
       return (
         <div>
           <Size.Desktop>
-            <div style={MainDesktop}>
-                <div style={ContainerDesktop}>
+            <div style={MainBig}>
+                <div style={ContainerBig}>
                     <div style={TitleDesktop}>Digital Product Maker and Musician</div>
-                    <a style={ButtonDesktop} href="/me">
+                    <a style={ButtonBig} href="/me">
                       Get to know me<img style={Chevron} src={chevron}/>
                     </a>
                 </div>
@@ -123,10 +123,10 @@ class HomeHero extends React.Component {
             </div>
           </Size.Desktop>
           <Size.Tablet>
-            <div style={MainDesktop}>
-                <div style={ContainerDesktop}>
+            <div style={MainBig}>
+                <div style={ContainerBig}>
                     <div style={TitleTablet}>Digital Product Maker and Musician</div>
-                    <a style={ButtonDesktop} href="/me">
+                    <a style={ButtonBig} href="/me">
                       Get to know me<img style={Chevron} src={chevron}/>
                     </a>
                 </div>
@@ -134,10 +134,10 @@ class HomeHero extends React.Component {
             </div>
           </Size.Tablet>
           <Size.Mobile>
-            <div style={MainDefault}>
-                <div style={ContainerDefault}>
+            <div style={MainMobile}>
+                <div style={ContainerMobile}>
                     <div style={TitleMobile}>Digital Product Maker and Musician</div>
-                    <a style={ButtonDefault} href="/me">
+                    <a style={ButtonMobile} href="/me">
                       Get to know me<img style={Chevron} src={chevron}/>
                     </a>
                 </div>
