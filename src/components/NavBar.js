@@ -3,11 +3,6 @@ import Size from '../Size.js';
 import logo from "../assets/logo.svg";
 import menu from "../assets/icons/menu.svg"
 
-const Main = {
-    position: "absolute",
-    width: "100%"
-}
-
 const ContainerDesktop = {
     maxWidth: "1080px",
     height: "100px",
@@ -51,7 +46,32 @@ const Link = {
 }
 
 class NavBar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {color: "transparent"};
+    }
+
+    listenScrollEvent = e => {
+        if (window.scrollY > 0) {
+            this.setState({color: "rgba(0,0,0,0.85)"})
+        } 
+        else {
+            this.setState({color: "transparent"})
+        }
+    }
+    
+    componentDidMount() {
+        window.addEventListener("scroll", this.listenScrollEvent)
+    }
+
     render() {
+      const Main = {
+        position: "fixed",
+        width: "100%",
+        zIndex: "999",
+        backgroundColor: this.state.color
+      }
+        
       return (
         <div style={Main}>
             <Size.Desktop>
