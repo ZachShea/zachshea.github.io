@@ -55,6 +55,7 @@ class NavBar extends React.Component {
     
     componentDidMount() {
         window.addEventListener("scroll", this.listenScrollEvent)
+        this.listenScrollEvent()
     }
 
     render() {

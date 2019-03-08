@@ -5,7 +5,9 @@ const Main = {
     width: "100%",
     backgroundColor: "rgba(255, 255, 255, 0.98)",
     borderRadius: "0 0 20px 20px",
-    position: "absolute"
+    position: "fixed",
+    zIndex: "1000",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.1)"
 }
 
 const Container = {
