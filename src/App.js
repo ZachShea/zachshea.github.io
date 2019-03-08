@@ -14,8 +14,8 @@ class App extends Component {
         <NavViewController/>
         <HomeHero/>
         <Projects/>
-        <Visuals/>
-        <Music/>
+        {/* <Visuals/>
+        <Music/> */}
         <Footer/>
       </div>
     );

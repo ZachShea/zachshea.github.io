@@ -39,8 +39,8 @@ class NavMenu extends React.Component {
                 <div style={LinksList}>
                     <a style={Link} href="/">Me</a>
                     <a style={Link} href="/#projects" onClick={this.props.closeMenu}>Projects</a>
-                    <a style={Link} href="/#visuals" onClick={this.props.closeMenu}>Visuals</a>
-                    <a style={Link} href="/#music" onClick={this.props.closeMenu}>Music</a>
+                    {/* <a style={Link} href="/#visuals" onClick={this.props.closeMenu}>Visuals</a>
+                    <a style={Link} href="/#music" onClick={this.props.closeMenu}>Music</a> */}
                 </div>
             </div>
         </div>

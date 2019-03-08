@@ -3,25 +3,6 @@ import Size from '../Size.js';
 import logo from "../assets/logo.svg";
 import menu from "../assets/icons/menu.svg"
 
-const ContainerDesktop = {
-    maxWidth: "1080px",
-    height: "100px",
-    margin: "auto",
-    paddingLeft: "100px",
-    paddingRight: "100px",
-    display: "flex",
-    justifyContent: "space-between"
-}
-
-const ContainerDefault = {
-    maxWidth: "1080px",
-    height: "70px",
-    margin: "auto",
-    paddingLeft: "20px",
-    paddingRight: "20px",
-    display: "flex"
-}
-
 const Item = {
     alignSelf: "center"
 }
@@ -48,15 +29,27 @@ const Link = {
 class NavBar extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {color: "transparent"};
+        this.state = {
+            color: "transparent", 
+            height: "100px",
+            logoWidth: "auto"
+        };
     }
 
     listenScrollEvent = e => {
         if (window.scrollY > 0) {
-            this.setState({color: "rgba(0,0,0,0.85)"})
+            this.setState({
+                color: "rgba(0,0,0,0.85)", 
+                height: "60px",
+                logoWidth: "22px"
+            })
         } 
         else {
-            this.setState({color: "transparent"})
+            this.setState({
+                color: "transparent", 
+                height: "100px",
+                logoWidth: "auto"
+            })
         }
     }
     
@@ -71,17 +64,41 @@ class NavBar extends React.Component {
         zIndex: "999",
         backgroundColor: this.state.color
       }
+
+      const ContainerDesktop = {
+        maxWidth: "1080px",
+        height: this.state.height,
+        margin: "auto",
+        paddingLeft: "100px",
+        paddingRight: "100px",
+        display: "flex",
+        justifyContent: "space-between"
+      }
+        
+      const ContainerDefault = {
+        maxWidth: "1080px",
+        height: "70px",
+        margin: "auto",
+        paddingLeft: "20px",
+        paddingRight: "20px",
+        display: "flex"
+      }
+
+      const LogoDesktop = {
+          width: this.state.logoWidth,
+          height: "auto"
+      }
         
       return (
         <div style={Main}>
             <Size.Desktop>
                 <div style={ContainerDesktop}>
-                    <a style={Item} href="/"><img src={logo}/></a>
+                    <a style={Item} href="/"><img src={logo} style={LogoDesktop}/></a>
                     <div style={Item}>
                         <a style={Link} href="/">Me</a>
                         <a style={Link} href="/#projects">Projects</a>
-                        <a style={Link} href="/#visuals">Visuals</a>
-                        <a style={Link} href="/#music">Music</a>
+                        {/* <a style={Link} href="/#visuals">Visuals</a>
+                        <a style={Link} href="/#music">Music</a> */}
                     </div>
                 </div>
             </Size.Desktop>
