@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 import menuClose from "../assets/icons/menu-close.svg"
 
 const Main = {
@@ -23,7 +26,7 @@ const LinksList = {
     textAlign: "center"
 }
 
-const Link = {
+const LinkStyle = {
     marginBottom: "20px",
     color: "black",
     fontSize: "20px",
@@ -37,12 +40,12 @@ class NavMenu extends React.Component {
       return (
         <div style={Main} id="projects">
             <div style={Container}>
-                <a href="javascript:void(0);"><img src={menuClose} onClick={this.props.closeMenu}/></a>
+                <img style={{cursor:'pointer'}} src={menuClose} alt="Close Menu" onClick={this.props.closeMenu}/>
                 <div style={LinksList}>
-                    <a style={Link} href="/">Me</a>
-                    <a style={Link} href="/#projects" onClick={this.props.closeMenu}>Projects</a>
-                    {/* <a style={Link} href="/#visuals" onClick={this.props.closeMenu}>Visuals</a>
-                    <a style={Link} href="/#music" onClick={this.props.closeMenu}>Music</a> */}
+                    <Link style={LinkStyle} to="/me/" onClick={this.props.closeMenu}>Me</Link>
+                    <HashLink style={LinkStyle} smooth to="/#projects" onClick={this.props.closeMenu}>Projects</HashLink>
+                    {/* <HashLink style={LinkStyle} smooth to="/#visuals" onClick={this.props.closeMenu}>Visuals</HashLink>
+                    <HashLink style={LinkStyle} smooth to="/#music" onClick={this.props.closeMenu}>Music</HashLink> */}
                 </div>
             </div>
         </div>

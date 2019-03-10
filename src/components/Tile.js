@@ -15,7 +15,7 @@ class Tile extends React.Component {
       }
 
       return (
-        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank"/>
+        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank" rel="noopener noreferrer"/>
       );
     }
   }

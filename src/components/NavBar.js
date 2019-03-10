@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 import Size from '../Size.js';
 import logo from "../assets/logo.svg";
 import menu from "../assets/icons/menu.svg"
@@ -17,7 +20,7 @@ const LogoDefault = {
     height: "auto"
 }
 
-const Link = {
+const LinkStyle = {
     marginLeft: "50px",
     color: "white",
     fontSize: "20px",
@@ -94,19 +97,19 @@ class NavBar extends React.Component {
         <div style={Main}>
             <Size.Desktop>
                 <div style={ContainerDesktop}>
-                    <a style={Item} href="/"><img src={logo} style={LogoDesktop}/></a>
+                    <HashLink style={Item} smooth to="/#home"><img src={logo} alt="Home" style={LogoDesktop}/></HashLink>
                     <div style={Item}>
-                        <a style={Link} href="/">Me</a>
-                        <a style={Link} href="/#projects">Projects</a>
-                        {/* <a style={Link} href="/#visuals">Visuals</a>
-                        <a style={Link} href="/#music">Music</a> */}
+                        <Link style={LinkStyle} to="/me/">Me</Link>
+                        <HashLink style={LinkStyle} smooth to="/#projects">Projects</HashLink>
+                        {/* <HashLink style={LinkStyle} smooth to="/#visuals">Visuals</HashLink>
+                        <HashLink style={LinkStyle} smooth to="/#music">Music</HashLink> */}
                     </div>
                 </div>
             </Size.Desktop>
             <Size.Default>
                 <div style={ContainerDefault}>
-                    <div style={ItemFlex}><a href="javascript:void(0);"><img src={menu} onClick={this.props.openMenu}/></a></div>
-                    <a style={Item} href="/"><img src={logo} style={LogoDefault}/></a>
+                    <div style={ItemFlex}><img style={{cursor:'pointer'}} src={menu} alt="Open Menu" onClick={this.props.openMenu}/></div>
+                    <HashLink style={Item} smooth to="/#home"><img src={logo} alt="Home" style={LogoDefault}/></HashLink>
                     <div style={ItemFlex}/>
                 </div>
             </Size.Default>

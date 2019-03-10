@@ -1,10 +1,10 @@
 import React from 'react';
-import HomeHero from '../components/HomeHero.js';
 
 class MePage extends React.Component {
     render() { 
         return (<div>
-            <HomeHero/>
+            <br/><br/><br/><br/>
+            <br/><br/><br/><br/>
             Me Page
         </div>)
     }

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import Size from '../Size.js'
 import hero from '../assets/heros/hero-home.jpg'
 import chevron from '../assets/icons/chevron-right.svg'
@@ -110,38 +112,38 @@ class HomeHero extends React.Component {
       }
 
       return (
-        <div>
+        <div id="home">
           <Size.Desktop>
             <div style={MainBig}>
                 <div style={ContainerBig}>
                     <div style={TitleDesktop}>Digital Product Maker and Musician</div>
-                    <a style={ButtonBig} href="/me">
-                      Get to know me<img style={Chevron} src={chevron}/>
-                    </a>
+                    <Link style={ButtonBig} to="/me/">
+                      Get to know me<img style={Chevron} src={chevron} alt=""/>
+                    </Link>
                 </div>
-                <img style={ScrollIndicator} src={scrollIndicator}/>
+                <img style={ScrollIndicator} src={scrollIndicator} alt=""/>
             </div>
           </Size.Desktop>
           <Size.Tablet>
             <div style={MainBig}>
                 <div style={ContainerBig}>
                     <div style={TitleTablet}>Digital Product Maker and Musician</div>
-                    <a style={ButtonBig} href="/me">
-                      Get to know me<img style={Chevron} src={chevron}/>
-                    </a>
+                    <Link style={ButtonBig} to="/me/">
+                      Get to know me<img style={Chevron} src={chevron} alt=""/>
+                    </Link>
                 </div>
-                <img style={ScrollIndicator} src={scrollIndicator}/>
+                <img style={ScrollIndicator} src={scrollIndicator} alt=""/>
             </div>
           </Size.Tablet>
           <Size.Mobile>
             <div style={MainMobile}>
                 <div style={ContainerMobile}>
                     <div style={TitleMobile}>Digital Product Maker and Musician</div>
-                    <a style={ButtonMobile} href="/me">
-                      Get to know me<img style={Chevron} src={chevron}/>
-                    </a>
+                    <Link style={ButtonMobile} to="/me/">
+                      Get to know me<img style={Chevron} src={chevron} alt=""/>
+                    </Link>
                 </div>
-                <img style={ScrollIndicator} src={scrollIndicator}/>
+                <img style={ScrollIndicator} src={scrollIndicator} alt=""/>
             </div>
           </Size.Mobile>
         </div>

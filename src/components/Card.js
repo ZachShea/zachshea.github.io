@@ -60,23 +60,22 @@ class Card extends React.Component {
       }
 
       return (
-        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank">
+        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank" rel="noopener noreferrer">
           <Size.Desktop>
             <div style={ContentDesktop}>
               <div style={Description}>{this.props.description}</div>
               <div style={TitleDesktop}>{this.props.title}</div>
-              <div style={IconBounds}><img src={this.props.icon}/></div>
+              <div style={IconBounds}><img src={this.props.icon} alt=""/></div>
             </div>
           </Size.Desktop>
           <Size.Default>
             <div style={ContentDefault}>
               <div style={Description}>{this.props.description}</div>
               <div style={TitleDefault}>{this.props.title}</div>
-              <div style={IconBounds}><img src={this.props.icon}/></div>
+              <div style={IconBounds}><img src={this.props.icon} alt=""/></div>
             </div>
           </Size.Default>
         </a>
-        
       );
     }
   }
