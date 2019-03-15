@@ -67,7 +67,7 @@ class Footer extends React.Component {
                     <a style={SocialIconDesktop} href="https://twitter.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter"/></a>
                     <a style={SocialIconDesktop} href="https://github.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub"/></a>
                     <a style={SocialIconDesktop} href="https://www.linkedin.com/in/ZachShea" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn"/></a>
-                    <a style={SocialIconDesktop} href="https://soundcloud.com/zach-shea" target="_blank" rel="noopener noreferrer"><img src={soundcloud} alt="SoundCloud"/></a>
+                    <a style={SocialIconDesktop} href="https://soundcloud.com/zach-shea/tracks" target="_blank" rel="noopener noreferrer"><img src={soundcloud} alt="SoundCloud"/></a>
                 </div>
                 <div style={CopyrightDesktop}>© 2019 Zachary Shea.  All rights reserved.</div>
             </div>
@@ -80,7 +80,7 @@ class Footer extends React.Component {
                     <a style={SocialIconDefault} href="https://twitter.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter"/></a>
                     <a style={SocialIconDefault} href="https://github.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub"/></a>
                     <a style={SocialIconDefault} href="https://www.linkedin.com/in/ZachShea" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn"/></a>
-                    <a style={SocialIconDefault} href="https://soundcloud.com/zach-shea" target="_blank" rel="noopener noreferrer"><img src={soundcloud} alt="SoundCloud"/></a>
+                    <a style={SocialIconDefault} href="https://soundcloud.com/zach-shea/tracks" target="_blank" rel="noopener noreferrer"><img src={soundcloud} alt="SoundCloud"/></a>
                 </div>
                 <div style={CopyrightDefault}>© 2019 Zachary Shea.  All rights reserved.</div>
             </div>
