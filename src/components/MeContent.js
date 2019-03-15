@@ -1,5 +1,27 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
+
 import Size from '../Size.js';
+import ExternalLink from './ExternalLink.js';
+
+
+function ProductMaker() {
+  return (<div>
+      Back in eighth grade, a friend of mine came to me with an idea for an iPhone app. I didn’t know anything about designing apps or writing code, but decided to give it a go. This set me on a path to creating numerous apps over my high school career, as well as studying and applying UX design principles. In my senior year, my teammate and I placed fourth in the Mobile Application Development category for the <ExternalLink text="FBLA" url="https://www.fbla-pbl.org"/> national competition.<br/><br/>
+      Shortly after starting classes at the University of Central Florida, I began cofounding a startup called <ExternalLink text="Zuke Music" url="https://zukemusic.com"/>. For almost a year, I helped to conduct customer interviews, determining product-market fit, and I designed mockups and interactive prototypes for the app. We continued to iterate as we conducted user studies and developed our business model. I began writing the code for the iOS app, and Zuke launched March 2017.<br/><br/>
+      Since then, I’ve worked to add value to the Zuke app, designing and coding new features. I’ve continued to study and put my UI and UX design skills into <ExternalLink text="practice" url="https://dribbble.com/ZachShea"/>, working on multiple <HashLink to="/#projects">projects</HashLink> for different classes at UCF. Plus, I’m working as the sole UI/UX designer at <ExternalLink text="B.O.S. Technology" url="https://bostechusa.com"/>, strengthening my experience designing web apps and collaborating with larger teams.
+  </div>);
+}
+
+function Musician() {
+  return (<div>
+      Growing up in a musical family, music has pervaded my life since I was born. I sung in chorus and choir since I was a kid, and began hand drumming in fourth grade. I began to learn snare drum techniques in sixth grade, and joined the middle school concert band as a percussionist in seventh and eighth grade, taking piano lessons at the same time. I went on to learn guitar in ninth grade, and bass guitar that summer.<br/><br/>
+      I played drums for Sunday mass at my church throughout middle school, and switched to playing bass in the band throughout high school. I joined as the drummer of an alternative/punk rock band in high school, as well.<br/><br/>
+      Entering college at UCF, I joined <ExternalLink text="Catholic Campus Ministry" url="http://ccmknights.com"/> and played bass in the Praise Band for a year, and drums the year after. In my junior year, I served as one of two cochairs for the Praise Committee, switched to guitar and vocals, and lead one of the music teams that played for Sunday masses. Now in my senior year, I continue to serve and lead within the praise ministry and band.<br/><br/>
+      Although I love playing physical instruments, I am fascinated with creating <ExternalLink text="digital compositions" url="https://soundcloud.com/zach-shea/tracks"/>. When I have the time, I put on my headphones and dive into the world of electronic music, crafting rich chords and emotive melodies.
+  </div>);
+}
+
 
 const ContainerDesktop = {
   maxWidth: "1080px",
@@ -77,17 +99,10 @@ class MeContent extends React.Component {
                 <div style={MainDesktop} id="projects">
                     <div style={ContainerDesktop}>
                         <div style={TitleDesktop}>Product Maker</div>
-                        <div style={BodyDesktop}>
-                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum.<br/><br/>
-                            Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque.<br/><br/>
-                            Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque. Aliquam in nunc quis dui sollicitudin ornare ac vitae lectus.
-                        </div>
+                        <div style={BodyDesktop}><ProductMaker/></div>
                         <div style={SpacerDesktop}/>
                         <div style={TitleDesktop}>Musician</div>
-                        <div style={BodyDesktop}>
-                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum.<br/><br/>
-                            Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas.
-                        </div>
+                        <div style={BodyDesktop}><Musician/></div>
                     </div>
                 </div>
             </Size.Desktop>
@@ -95,17 +110,10 @@ class MeContent extends React.Component {
                 <div style={MainDefault} id="projects">
                     <div style={ContainerDefault}>
                         <div style={TitleDefault}>Product Maker</div>
-                        <div style={BodyDefault}>
-                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum.<br/><br/>
-                            Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque.<br/><br/>
-                            Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque. Aliquam in nunc quis dui sollicitudin ornare ac vitae lectus.
-                        </div>
+                        <div style={BodyDefault}><ProductMaker/></div>
                         <div style={SpacerDefault}/>
                         <div style={TitleDefault}>Musician</div>
-                        <div style={BodyDefault}>
-                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum.<br/><br/>
-                            Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas.
-                        </div>
+                        <div style={BodyDefault}><Musician/></div>
                     </div>
                 </div>
             </Size.Default>
