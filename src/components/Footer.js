@@ -26,7 +26,7 @@ const ContainerDefault = {
 }
 
 const Socials = {
-    marginBottom: "60px",
+    marginBottom: "40px",
     display: "flex",
     flexWrap: "wrap",
     alignItems: "center"
@@ -43,16 +43,16 @@ const SocialIconDefault = {
 }
 
 const CopyrightDesktop = {
-  fontSize: "20px",
+  fontSize: "17px",
   fontWeight: "500",
   letterSpacing: "1px",
-  color: "rgba(255,255,255,0.6)"
+  color: "rgba(255,255,255,0.5)"
 }
 
 const CopyrightDefault = {
   fontSize: "15px",
   fontWeight: "500",
-  color: "rgba(255,255,255,0.6)"
+  color: "rgba(255,255,255,0.5)"
 }
 
 class Footer extends React.Component {
