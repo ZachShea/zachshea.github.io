@@ -42,7 +42,7 @@ class NavMenu extends React.Component {
             <div style={Container}>
                 <img style={{cursor:'pointer'}} src={menuClose} alt="Close Menu" onClick={this.props.closeMenu}/>
                 <div style={LinksList}>
-                    <Link style={LinkStyle} to="/me/" onClick={this.props.closeMenu}>Me</Link>
+                    <HashLink style={LinkStyle} smooth to="/me#hero" onClick={this.props.closeMenu}>Me</HashLink>
                     <HashLink style={LinkStyle} smooth to="/#projects" onClick={this.props.closeMenu}>Projects</HashLink>
                     {/* <HashLink style={LinkStyle} smooth to="/#visuals" onClick={this.props.closeMenu}>Visuals</HashLink>
                     <HashLink style={LinkStyle} smooth to="/#music" onClick={this.props.closeMenu}>Music</HashLink> */}

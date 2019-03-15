@@ -117,7 +117,7 @@ class HomeHero extends React.Component {
             <div style={MainBig}>
                 <div style={ContainerBig}>
                     <div style={TitleDesktop}>Digital Product Maker and Musician</div>
-                    <Link style={ButtonBig} to="/me/">
+                    <Link style={ButtonBig} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
                     </Link>
                 </div>
@@ -128,7 +128,7 @@ class HomeHero extends React.Component {
             <div style={MainBig}>
                 <div style={ContainerBig}>
                     <div style={TitleTablet}>Digital Product Maker and Musician</div>
-                    <Link style={ButtonBig} to="/me/">
+                    <Link style={ButtonBig} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
                     </Link>
                 </div>
@@ -139,7 +139,7 @@ class HomeHero extends React.Component {
             <div style={MainMobile}>
                 <div style={ContainerMobile}>
                     <div style={TitleMobile}>Digital Product Maker and Musician</div>
-                    <Link style={ButtonMobile} to="/me/">
+                    <Link style={ButtonMobile} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
                     </Link>
                 </div>

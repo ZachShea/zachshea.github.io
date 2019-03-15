@@ -14,7 +14,7 @@ class App extends Component {
           <NavViewController/>
 
           <Route path="/" exact component={HomePage} />
-          <Route path="/me/" component={MePage} />
+          <Route path="/me" component={MePage} />
           
           <Footer/>
         </div>

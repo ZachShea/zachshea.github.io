@@ -99,7 +99,7 @@ class NavBar extends React.Component {
                 <div style={ContainerDesktop}>
                     <HashLink style={Item} smooth to="/#home"><img src={logo} alt="Home" style={LogoDesktop}/></HashLink>
                     <div style={Item}>
-                        <Link style={LinkStyle} to="/me/">Me</Link>
+                        <HashLink style={LinkStyle} smooth to="/me#hero">Me</HashLink>
                         <HashLink style={LinkStyle} smooth to="/#projects">Projects</HashLink>
                         {/* <HashLink style={LinkStyle} smooth to="/#visuals">Visuals</HashLink>
                         <HashLink style={LinkStyle} smooth to="/#music">Music</HashLink> */}
