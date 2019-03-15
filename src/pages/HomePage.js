@@ -5,6 +5,10 @@ import Projects from '../components/Projects.js';
 // import Music from  '../components/Music.js';
 
 class HomePage extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() { 
         return (<div>
             <HomeHero/>
