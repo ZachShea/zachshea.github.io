@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="navbar/mobile" transform="translate(-20.000000, -25.000000)" fill="#FFFFFF">
+            <g id="navbar">
+                <path d="M21,25 L43,25 C43.5522847,25 44,25.4477153 44,26 C44,26.5522847 43.5522847,27 43,27 L21,27 C20.4477153,27 20,26.5522847 20,26 C20,25.4477153 20.4477153,25 21,25 Z M21,41 L43,41 C43.5522847,41 44,41.4477153 44,42 C44,42.5522847 43.5522847,43 43,43 L21,43 C20.4477153,43 20,42.5522847 20,42 C20,41.4477153 20.4477153,41 21,41 Z M21,33 L43,33 C43.5522847,33 44,33.4477153 44,34 C44,34.5522847 43.5522847,35 43,35 L21,35 C20.4477153,35 20,34.5522847 20,34 C20,33.4477153 20.4477153,33 21,33 Z" id="menu"></path>
+            </g>
+        </g>
+    </g>
+</svg>

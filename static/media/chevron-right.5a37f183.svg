@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0.439339828,2.56066017 C-0.146446609,1.97487373 -0.146446609,1.02512627 0.439339828,0.439339828 C1.02512627,-0.146446609 1.97487373,-0.146446609 2.56066017,0.439339828 L9.56066017,7.43933983 C10.1464466,8.02512627 10.1464466,8.97487373 9.56066017,9.56066017 L2.56066017,16.5606602 C1.97487373,17.1464466 1.02512627,17.1464466 0.439339828,16.5606602 C-0.146446609,15.9748737 -0.146446609,15.0251263 0.439339828,14.4393398 L6.37867966,8.5 L0.439339828,2.56066017 Z" id="chevron-right" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>
