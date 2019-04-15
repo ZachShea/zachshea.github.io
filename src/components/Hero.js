@@ -85,14 +85,14 @@ class Hero extends React.Component {
           <Size.Tablet>
             <div style={MainBig}>
                 <div style={ContainerBig}>
-                    <div style={TitleTablet}>{this.props.title}</div>
+                    <div style={TitleTablet}>{this.props.title}<br/>{this.props.subtitle}</div>
                 </div>
             </div>
           </Size.Tablet>
           <Size.Mobile>
             <div style={MainMobile}>
                 <div style={ContainerMobile}>
-                    <div style={TitleMobile}>{this.props.title}</div>
+                    <div style={TitleMobile}>{this.props.title}<br/>{this.props.subtitle}</div>
                 </div>
             </div>
           </Size.Mobile>
