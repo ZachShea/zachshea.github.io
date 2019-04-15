@@ -78,7 +78,7 @@ class Hero extends React.Component {
           <Size.Desktop>
             <div style={MainBig}>
                 <div style={ContainerBig}>
-                    <div style={TitleDesktop}>{this.props.title}</div>
+                    <div style={TitleDesktop}>{this.props.title}<br/>{this.props.subtitle}</div>
                 </div>
             </div>
           </Size.Desktop>

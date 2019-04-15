@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="32px" viewBox="0 0 44 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>social-email</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-654.000000, -134.000000)" fill="#FFFFFE">
+            <g id="container" transform="translate(100.000000, 130.000000)">
+                <g id="socials">
+                    <path d="M598,10 L580.138029,18.1190775 C577.508779,19.3141912 574.491221,19.3141912 571.861971,18.1190775 L554,10 L554,7 C554,5.34314575 555.343146,4 557,4 L595,4 C596.656854,4 598,5.34314575 598,7 L598,10 Z M598,16 L598,33 C598,34.6568542 596.656854,36 595,36 L557,36 C555.343146,36 554,34.6568542 554,33 L554,16 L571.861971,24.1190775 C574.491221,25.3141912 577.508779,25.3141912 580.138029,24.1190775 L598,16 Z" id="social-email"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

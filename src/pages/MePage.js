@@ -10,7 +10,7 @@ class MePage extends React.Component {
 
     render() { 
         return (<div>
-            <Hero title="About Me" image={heroImage}/>
+            <Hero title="Hi." subtitle="I’m Zach Shea." image={heroImage}/>
             <MeContent/>
         </div>)
     }
