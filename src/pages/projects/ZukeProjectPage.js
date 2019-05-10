@@ -1,5 +1,6 @@
 import React from 'react';
 import Size from '../../Size.js';
+import MyRetinaImage from '../../components/MyRetinaImage.js'
 import ProjectPage from './ProjectPage.js';
 import TitleBodyItem from '../../components/body/TitleBodyItem.js';
 import NormalBodyItem from '../../components/body/NormalBodyItem.js';
@@ -8,10 +9,11 @@ import SpacerBodyItem from '../../components/body/SpacerBodyItem.js';
 
 import icon from "../../assets/icons/icon-zuke.svg"
 import heroImage from '../../assets/heros/hero-zuke.png'
-import icorpsLogo from '../../assets/images/logo-icorps.png'
 import ssLogo from '../../assets/images/logo-ss.svg'
-import icorpsLogoSmall from '../../assets/images/logo-icorps-small.png'
 import ssLogoSmall from '../../assets/images/logo-ss-small.svg'
+
+var icorpsLogo = 'logo-icorps.png'
+var icorpsLogoSmall = 'logo-icorps-small.png'
 
 const ImagesContainer = {
     textAlign: "center"
@@ -63,16 +65,16 @@ class ZukeProjectPage extends React.Component {
                     <div style={Images}>
                         <Size.NotTiny>
                             <Size.Large>
-                                <img style={ImageLarge} src={icorpsLogo} alt="UCF I-Corps"/>
+                                <div style={ImageLarge}><MyRetinaImage name={icorpsLogo} /></div>
                                 <img style={ImageLarge} src={ssLogo} alt="Starter Studio"/>
                             </Size.Large>
                             <Size.Mobile>
-                                <img style={ImageMobile} src={icorpsLogoSmall} alt="UCF I-Corps"/>
+                                <div style={ImageMobile}><MyRetinaImage name={icorpsLogoSmall} /></div>
                                 <img style={ImageMobile} src={ssLogoSmall} alt="Starter Studio"/>
                             </Size.Mobile>
                         </Size.NotTiny>
                         <Size.Tiny>
-                            <img style={ICorpsTiny} src={icorpsLogoSmall} alt="UCF I-Corps"/>
+                            <div style={ICorpsTiny}><MyRetinaImage name={icorpsLogoSmall} /></div>
                             <img style={SSTiny} src={ssLogoSmall} alt="Starter Studio"/>
                         </Size.Tiny>
                     </div>
