@@ -48,6 +48,9 @@ const SSTiny = {
 
 class ZukeProjectPage extends React.Component {
     render() { 
+        let icorpsLink = "https://icorps.cie.ucf.edu"
+        let ssLink = "https://www.starterstudio.org"
+
         return <ProjectPage 
             description="The Music Network" 
             title="Zuke Music" 
@@ -66,20 +69,24 @@ class ZukeProjectPage extends React.Component {
                 <SpacerBodyItem/>
                 <div style={ImagesContainer}>
                     <div style={Images}>
-                        <Size.NotTiny>
-                            <Size.Large>
-                                <div style={ImageLarge}><MyRetinaImage name={icorpsLogo} /></div>
-                                <img style={ImageLarge} src={ssLogo} alt="Starter Studio"/>
-                            </Size.Large>
-                            <Size.Mobile>
-                                <div style={ImageMobile}><MyRetinaImage name={icorpsLogoSmall} /></div>
-                                <img style={ImageMobile} src={ssLogoSmall} alt="Starter Studio"/>
-                            </Size.Mobile>
-                        </Size.NotTiny>
-                        <Size.Tiny>
-                            <div style={ICorpsTiny}><MyRetinaImage name={icorpsLogoSmall} /></div>
-                            <img style={SSTiny} src={ssLogoSmall} alt="Starter Studio"/>
-                        </Size.Tiny>
+                        <a href={icorpsLink} target="_blank" rel="noopener noreferrer">
+                            <Size.NotTiny>
+                                <Size.Large><div style={ImageLarge}><MyRetinaImage name={icorpsLogo} /></div></Size.Large>
+                                <Size.Mobile><div style={ImageMobile}><MyRetinaImage name={icorpsLogoSmall} /></div></Size.Mobile>
+                            </Size.NotTiny>
+                            <Size.Tiny>
+                                <div style={ICorpsTiny}><MyRetinaImage name={icorpsLogoSmall} /></div>
+                            </Size.Tiny>
+                        </a>
+                        <a href={ssLink} target="_blank" rel="noopener noreferrer">
+                            <Size.NotTiny>
+                                <Size.Large><img style={ImageLarge} src={ssLogo} alt="Starter Studio"/></Size.Large>
+                                <Size.Mobile><img style={ImageMobile} src={ssLogoSmall} alt="Starter Studio"/></Size.Mobile>
+                            </Size.NotTiny>
+                            <Size.Tiny>
+                                <img style={SSTiny} src={ssLogoSmall} alt="Starter Studio"/>
+                            </Size.Tiny>
+                        </a>
                     </div>
                 </div>
                 <SpacerBodyItem/>
