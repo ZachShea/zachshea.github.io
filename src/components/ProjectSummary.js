@@ -43,8 +43,8 @@ class ProjectSummary extends React.Component {
             <Size.Desktop>
                 <div style={MainDesktop}>
                     <div style={ContainerDesktop}>
-                        <ProjectPoint header="Client" body={this.props.client}/>
-                        <ProjectPoint header="Product" body={this.props.product}/>
+                        <ProjectPoint header="Client" body={this.props.client.name} link={this.props.client.link}/>
+                        <ProjectPoint header="Product" body={this.props.product.name} link={this.props.product.link}/>
                         <ProjectPoint header="Roles" body={this.props.roles}/>
                     </div>
                 </div>
@@ -52,8 +52,8 @@ class ProjectSummary extends React.Component {
             <Size.Default>
                 <div style={MainDefault}>
                     <div style={ContainerDefault}>
-                        <ProjectPoint header="Client" body={this.props.client}/>
-                        <ProjectPoint header="Product" body={this.props.product}/>
+                        <ProjectPoint header="Client" body={this.props.client.name} link={this.props.client.link}/>
+                        <ProjectPoint header="Product" body={this.props.product.name} link={this.props.product.link}/>
                         <ProjectPoint header="Roles" body={this.props.roles}/>
                     </div>
                 </div>

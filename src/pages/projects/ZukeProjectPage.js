@@ -60,9 +60,19 @@ class ZukeProjectPage extends React.Component {
             title="Zuke Music" 
             icon={icon} 
             heroImage={heroImage}
-            client="Zuke Music, Inc." 
-            product="Zuke Music for iOS" 
-            roles="A few of them"
+            client={{
+                name: "Zuke Music, Inc.", 
+                link: "https://zukemusic.com"
+            }}
+            product={{
+                name: "Zuke Music for iOS", 
+                link: "https://itunes.apple.com/us/app/zuke-music/id1136042367"
+            }}
+            roles={<div>
+                Co-founder<br/>
+                Product Designer<br/>
+                iOS Developer
+            </div>}
             content={<div>
                 <TitleBodyItem content="Client"/>
                 <NormalBodyItem content="Zuke Music, Inc. is a startup founded by Arielle Cohen and I in October 2015. The company’s product, Zuke Music, is an iOS application that allows those involved in the music industry to network and collaborate with one another."/>
