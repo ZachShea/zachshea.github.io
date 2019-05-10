@@ -53,7 +53,7 @@ class Card extends React.Component {
       }
 
       return (
-        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank" rel="noopener noreferrer">
+        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target={this.props.openNewWindow ? "_blank" : ""} rel="noopener noreferrer">
           <Size.Desktop>
             <div style={ContentDesktop}>
               <div style={Description}>{this.props.description}</div>
@@ -71,6 +71,10 @@ class Card extends React.Component {
         </a>
       );
     }
+  }
+
+  Card.defaultProps = {
+    openNewWindow: true
   }
   
   export default Card;

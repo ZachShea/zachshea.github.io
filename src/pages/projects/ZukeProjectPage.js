@@ -12,8 +12,8 @@ import heroImage from '../../assets/heros/hero-zuke.png'
 import ssLogo from '../../assets/images/logo-ss.svg'
 import ssLogoSmall from '../../assets/images/logo-ss-small.svg'
 
-var icorpsLogo = 'logo-icorps.png'
-var icorpsLogoSmall = 'logo-icorps-small.png'
+let icorpsLogo = 'logo-icorps.png'
+let icorpsLogoSmall = 'logo-icorps-small.png'
 
 const ImagesContainer = {
     textAlign: "center"
@@ -53,6 +53,9 @@ class ZukeProjectPage extends React.Component {
             title="Zuke Music" 
             icon={icon} 
             heroImage={heroImage}
+            client="Zuke Music, Inc." 
+            product="Zuke Music for iOS" 
+            roles="A few of them"
             content={<div>
                 <TitleBodyItem content="Client"/>
                 <NormalBodyItem content="Zuke Music, Inc. is a startup founded by Arielle Cohen and I in October 2015. The company’s product, Zuke Music, is an iOS application that allows those involved in the music industry to network and collaborate with one another."/>

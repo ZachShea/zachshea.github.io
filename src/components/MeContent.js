@@ -102,7 +102,7 @@ class MeContent extends React.Component {
       return (
         <div>
             <Size.Desktop>
-                <div style={MainDesktop} id="projects">
+                <div style={MainDesktop}>
                     <div style={ContainerDesktop}>
                         <div style={TitleDesktop}>Product Maker</div>
                         <div style={BodyDesktop}><ProductMaker/></div>
@@ -115,7 +115,7 @@ class MeContent extends React.Component {
                 </div>
             </Size.Desktop>
             <Size.Default>
-                <div style={MainDefault} id="projects">
+                <div style={MainDefault}>
                     <div style={ContainerDefault}>
                         <div style={TitleDefault}>Product Maker</div>
                         <div style={BodyDefault}><ProductMaker/></div>

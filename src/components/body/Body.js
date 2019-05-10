@@ -36,14 +36,14 @@ class Body extends React.Component {
       return (
         <div>
             <Size.Desktop>
-                <div style={MainDesktop} id="projects">
+                <div style={MainDesktop}>
                     <div style={ContainerDesktop}>
                         {this.props.content}
                     </div>
                 </div>
             </Size.Desktop>
             <Size.Default>
-                <div style={MainDefault} id="projects">
+                <div style={MainDefault}>
                     <div style={ContainerDefault}>
                         {this.props.content}
                     </div>
