@@ -1,6 +1,8 @@
 import React from 'react';
 import Size from '../../Size.js';
+import ExternalLink from '../../components/ExternalLink.js';
 import MyRetinaImage from '../../components/MyRetinaImage.js'
+
 import ProjectPage from './ProjectPage.js';
 import TitleBodyItem from '../../components/body/TitleBodyItem.js';
 import NormalBodyItem from '../../components/body/NormalBodyItem.js';
@@ -79,7 +81,7 @@ class ZukeProjectPage extends React.Component {
                 <QuoteBodyItem content="At Zuke Music, our goal is to help people in the music industry connect with music pros to take their careers to the next level and create the ultimate music collaborations."/>
                 <SpacerBodyItem/>
                 <TitleBodyItem content="Role"/>
-                <NormalBodyItem content="I took on many roles in this project. Since Arielle and I cofounded the company, we worked together to generate ideas and develop our business model. We took Zuke Music through the I-Corps program at the University of Central Florida, and then through the Starter Studio business accelerator program in downtown Orlando."/>
+                <NormalBodyItem content={<div>I took on many roles in this project. Since Arielle and I cofounded the company, we worked together to generate ideas and develop our business model. We took Zuke Music through the <ExternalLink text="I-Corps" url={icorpsLink}/> program at the University of Central Florida, and then through the <ExternalLink text="Starter Studio" url={ssLink}/> business accelerator program in downtown Orlando.</div>}/>
                 <SpacerBodyItem/>
                 <div style={ImagesContainer}>
                     <div style={Images}>
@@ -113,7 +115,7 @@ class ZukeProjectPage extends React.Component {
                 <TitleBodyItem content="Outcome"/>
                 <NormalBodyItem content={<div>
                     From working on Zuke, I’ve learned an extraordinary amount about developing business models, establishing product-market fit, user experience and interface design, iOS app development, and working with RESTful APIs. I’ve also seen an increase in my proficiency when designing digital products and writing code.<br/><br/>
-                    However, I’ve also learned the importance of an MVP and avoiding feature creep. Zuke was a huge app for one designer and a two person dev team to take on. It was very tempting to build everything all at once and release a fully-featured app from the start, but it resulted in delaying our release date, and therefore delaying the feedback we would receive from our users. I believe it would have been more beneficial to start small, with a couple of key features that persisted through the design phase into development.<br/><br/>
+                    However, I’ve also learned the importance of an <ExternalLink text="MVP" url="https://en.wikipedia.org/wiki/Minimum_viable_product"/> and avoiding <ExternalLink text="feature creep" url="https://en.wikipedia.org/wiki/Feature_creep"/>. Zuke was a huge app for one designer and a two person dev team to take on. It was very tempting to build everything all at once and release a fully-featured app from the start, but it resulted in delaying our release date, and therefore delaying the feedback we would receive from our users. I believe it would have been more beneficial to start small, with a couple of key features that persisted through the design phase into development.<br/><br/>
                     In the end, we created a product that we believe is helpful to many people looking for connections and collaborations in the music industry, and we’ve continued to push out new features to add value to the app, given feedback from our users.
                 </div>}/>
             </div>}
