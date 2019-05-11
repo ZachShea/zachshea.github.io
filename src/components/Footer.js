@@ -58,17 +58,20 @@ const CopyrightDefault = {
 
 class Footer extends React.Component {
     render() {
+      let t = "_blank"
+      let r = "noopener noreferrer"
+
       return (
         <div style={Main}>
           <Size.Desktop>
             <div style={ContainerDesktop}>
                 <div style={Socials}>
-                    <a style={SocialIconDesktop} href="https://dribbble.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={dribbble} alt="Dribbble"/></a>
-                    <a style={SocialIconDesktop} href="https://www.instagram.com/shea_zach/" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Instagram"/></a>
-                    <a style={SocialIconDesktop} href="https://twitter.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter"/></a>
-                    <a style={SocialIconDesktop} href="https://github.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub"/></a>
-                    <a style={SocialIconDesktop} href="https://www.linkedin.com/in/ZachShea" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn"/></a>
-                    <a style={SocialIconDesktop} href="https://soundcloud.com/zach-shea/tracks" target="_blank" rel="noopener noreferrer"><img src={soundcloud} alt="SoundCloud"/></a>
+                    <a style={SocialIconDesktop} href="https://dribbble.com/ZachShea"           target={t} rel={r}><img src={dribbble}    alt="Dribbble"/></a>
+                    <a style={SocialIconDesktop} href="https://www.instagram.com/shea_zach/"    target={t} rel={r}><img src={instagram}   alt="Instagram"/></a>
+                    <a style={SocialIconDesktop} href="https://twitter.com/ZachShea"            target={t} rel={r}><img src={twitter}     alt="Twitter"/></a>
+                    <a style={SocialIconDesktop} href="https://github.com/ZachShea"             target={t} rel={r}><img src={github}      alt="GitHub"/></a>
+                    <a style={SocialIconDesktop} href="https://www.linkedin.com/in/ZachShea"    target={t} rel={r}><img src={linkedin}    alt="LinkedIn"/></a>
+                    <a style={SocialIconDesktop} href="https://soundcloud.com/zach-shea/tracks" target={t} rel={r}><img src={soundcloud}  alt="SoundCloud"/></a>
                     <a style={SocialIconDesktop} href="mailto:zacharyshea@icloud.com"><img src={email} alt="Email"/></a>
                 </div>
                 <div style={CopyrightDesktop}>© 2019 Zachary Shea.  All rights reserved.</div>
@@ -77,11 +80,12 @@ class Footer extends React.Component {
           <Size.Default>
             <div style={ContainerDefault}>
                 <div style={Socials}>
-                    <a style={SocialIconDefault} href="https://dribbble.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={dribbble} alt="Dribbble"/></a>
-                    <a style={SocialIconDefault} href="https://www.instagram.com/shea_zach/" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Instagram"/></a>
-                    <a style={SocialIconDefault} href="https://twitter.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter"/></a>
-                    <a style={SocialIconDefault} href="https://github.com/ZachShea" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub"/></a>
-                    <a style={SocialIconDefault} href="https://www.linkedin.com/in/ZachShea" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn"/></a>
+                    <a style={SocialIconDefault} href="https://dribbble.com/ZachShea"           target={t} rel={r}><img src={dribbble}    alt="Dribbble"/></a>
+                    <a style={SocialIconDefault} href="https://www.instagram.com/shea_zach/"    target={t} rel={r}><img src={instagram}   alt="Instagram"/></a>
+                    <a style={SocialIconDefault} href="https://twitter.com/ZachShea"            target={t} rel={r}><img src={twitter}     alt="Twitter"/></a>
+                    <a style={SocialIconDefault} href="https://github.com/ZachShea"             target={t} rel={r}><img src={github}      alt="GitHub"/></a>
+                    <a style={SocialIconDefault} href="https://www.linkedin.com/in/ZachShea"    target={t} rel={r}><img src={linkedin}    alt="LinkedIn"/></a>
+                    <a style={SocialIconDesktop} href="https://soundcloud.com/zach-shea/tracks" target={t} rel={r}><img src={soundcloud}  alt="SoundCloud"/></a>
                     <a style={SocialIconDefault} href="mailto:zacharyshea@icloud.com"><img src={email} alt="Email"/></a>
                 </div>
                 <div style={CopyrightDefault}>© 2019 Zachary Shea.  All rights reserved.</div>
