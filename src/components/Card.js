@@ -1,5 +1,6 @@
 import React from 'react';
 import Size from '../Size.js';
+import { Link } from "react-router-dom";
 
 const ContentDesktop = {
   margin: "63px 40px 63px 40px",
@@ -52,24 +53,28 @@ class Card extends React.Component {
         backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(" + background + ")"
       }
 
-      return (
-        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target={this.props.openNewWindow ? "_blank" : ""} rel="noopener noreferrer">
-          <Size.Desktop>
-            <div style={ContentDesktop}>
-              <div style={Description}>{this.props.description}</div>
-              <div style={TitleDesktop}>{this.props.title}</div>
-              <img src={this.props.icon} alt=""/>
-            </div>
-          </Size.Desktop>
-          <Size.Default>
-            <div style={ContentDefault}>
-              <div style={Description}>{this.props.description}</div>
-              <div style={TitleDefault}>{this.props.title}</div>
-              <img src={this.props.icon} alt=""/>
-            </div>
-          </Size.Default>
-        </a>
-      );
+      var inner = <div>
+        <Size.Desktop>
+          <div style={ContentDesktop}>
+            <div style={Description}>{this.props.description}</div>
+            <div style={TitleDesktop}>{this.props.title}</div>
+            <img src={this.props.icon} alt=""/>
+          </div>
+        </Size.Desktop>
+        <Size.Default>
+          <div style={ContentDefault}>
+            <div style={Description}>{this.props.description}</div>
+            <div style={TitleDefault}>{this.props.title}</div>
+            <img src={this.props.icon} alt=""/>
+          </div>
+        </Size.Default>
+      </div>
+
+      if (!this.props.openNewWindow) {
+        return <Link style={Object.assign(Main, this.props.style)} to={this.props.link}>{inner}</Link> 
+      }
+
+      return <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank" rel="noopener noreferrer">{inner}</a>
     }
   }
 
