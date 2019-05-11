@@ -23,7 +23,7 @@ const ContainerDefault = {
   maxWidth: "1080px",
   marginLeft: "auto",
   marginRight: "auto",
-  padding: "40px 30px 50px 30px"
+  padding: "40px 0px 50px 30px"
 }
 
 const Socials = {
