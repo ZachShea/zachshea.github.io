@@ -36,13 +36,6 @@ const TitleDefault = {
   textShadow: "0 4px 30px rgba(0,0,0,0.4)"
 }
 
-const IconBounds = {
-  // height: "40px",
-  // display: "flex",
-  // flexDirection: "row",
-  // alignItems: "center"
-}
-
 class Card extends React.Component {
     render() {
       const { background = "" } = this.props;
@@ -60,24 +53,28 @@ class Card extends React.Component {
       }
 
       return (
-        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target="_blank" rel="noopener noreferrer">
+        <a style={Object.assign(Main, this.props.style)} href={this.props.link} target={this.props.openNewWindow ? "_blank" : ""} rel="noopener noreferrer">
           <Size.Desktop>
             <div style={ContentDesktop}>
               <div style={Description}>{this.props.description}</div>
               <div style={TitleDesktop}>{this.props.title}</div>
-              <div style={IconBounds}><img src={this.props.icon} alt=""/></div>
+              <img src={this.props.icon} alt=""/>
             </div>
           </Size.Desktop>
           <Size.Default>
             <div style={ContentDefault}>
               <div style={Description}>{this.props.description}</div>
               <div style={TitleDefault}>{this.props.title}</div>
-              <div style={IconBounds}><img src={this.props.icon} alt=""/></div>
+              <img src={this.props.icon} alt=""/>
             </div>
           </Size.Default>
         </a>
       );
     }
+  }
+
+  Card.defaultProps = {
+    openNewWindow: true
   }
   
   export default Card;

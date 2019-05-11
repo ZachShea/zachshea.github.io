@@ -5,6 +5,7 @@ import NavViewController from './components/NavViewController.js';
 import Footer from './components/Footer.js';
 import HomePage from './pages/HomePage.js';
 import MePage from './pages/MePage.js';
+import ZukeProjectPage from './pages/projects/ZukeProjectPage.js';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
 
           <Route path="/" exact component={HomePage} />
           <Route path="/me" component={MePage} />
+          <Route path="/zuke-music" component={ZukeProjectPage} />
           
           <Footer/>
         </div>
