@@ -27,7 +27,7 @@ const ContainerDefault = {
 }
 
 const Socials = {
-    marginBottom: "40px",
+    marginBottom: "50px",
     display: "flex",
     flexWrap: "wrap",
     alignItems: "center"
@@ -85,7 +85,7 @@ class Footer extends React.Component {
                     <a style={SocialIconDefault} href="https://twitter.com/ZachShea"            target={t} rel={r}><img src={twitter}     alt="Twitter"/></a>
                     <a style={SocialIconDefault} href="https://github.com/ZachShea"             target={t} rel={r}><img src={github}      alt="GitHub"/></a>
                     <a style={SocialIconDefault} href="https://www.linkedin.com/in/ZachShea"    target={t} rel={r}><img src={linkedin}    alt="LinkedIn"/></a>
-                    <a style={SocialIconDesktop} href="https://soundcloud.com/zach-shea/tracks" target={t} rel={r}><img src={soundcloud}  alt="SoundCloud"/></a>
+                    <a style={SocialIconDefault} href="https://soundcloud.com/zach-shea/tracks" target={t} rel={r}><img src={soundcloud}  alt="SoundCloud"/></a>
                     <a style={SocialIconDefault} href="mailto:zacharyshea@icloud.com"><img src={email} alt="Email"/></a>
                 </div>
                 <div style={CopyrightDefault}>© 2019 Zachary Shea.  All rights reserved.</div>
