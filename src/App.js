@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import NavViewController from './components/NavViewController.js';
 import Footer from './components/Footer.js';
 import HomePage from './pages/HomePage.js';
+import NotFoundPage from './pages/NotFoundPage.js';
 import MePage from './pages/MePage.js';
 import ZukeProjectPage from './pages/projects/ZukeProjectPage.js';
 
@@ -14,9 +15,12 @@ class App extends Component {
         <div style={{color: "white"}}>
           <NavViewController/>
 
-          <Route path="/" exact component={HomePage} />
-          <Route path="/me" component={MePage} />
-          <Route path="/zuke-music" component={ZukeProjectPage} />
+          <Switch>
+            <Route path="/" exact component={HomePage} />
+            <Route path="/(me|about)" component={MePage} />
+            <Route path="/(zuke-music|zuke)" component={ZukeProjectPage} />
+            <Route component={NotFoundPage} />
+          </Switch>
           
           <Footer/>
         </div>
