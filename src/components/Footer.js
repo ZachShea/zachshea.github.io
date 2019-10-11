@@ -67,7 +67,6 @@ class Footer extends React.Component {
             <div style={ContainerDesktop}>
                 <div style={Socials}>
                     <a style={SocialIconDesktop} href="https://dribbble.com/ZachShea"           target={t} rel={r}><img src={dribbble}    alt="Dribbble"/></a>
-                    <a style={SocialIconDesktop} href="https://www.instagram.com/shea_zach/"    target={t} rel={r}><img src={instagram}   alt="Instagram"/></a>
                     <a style={SocialIconDesktop} href="https://twitter.com/ZachShea"            target={t} rel={r}><img src={twitter}     alt="Twitter"/></a>
                     <a style={SocialIconDesktop} href="https://github.com/ZachShea"             target={t} rel={r}><img src={github}      alt="GitHub"/></a>
                     <a style={SocialIconDesktop} href="https://www.linkedin.com/in/ZachShea"    target={t} rel={r}><img src={linkedin}    alt="LinkedIn"/></a>
@@ -81,7 +80,6 @@ class Footer extends React.Component {
             <div style={ContainerDefault}>
                 <div style={Socials}>
                     <a style={SocialIconDefault} href="https://dribbble.com/ZachShea"           target={t} rel={r}><img src={dribbble}    alt="Dribbble"/></a>
-                    <a style={SocialIconDefault} href="https://www.instagram.com/shea_zach/"    target={t} rel={r}><img src={instagram}   alt="Instagram"/></a>
                     <a style={SocialIconDefault} href="https://twitter.com/ZachShea"            target={t} rel={r}><img src={twitter}     alt="Twitter"/></a>
                     <a style={SocialIconDefault} href="https://github.com/ZachShea"             target={t} rel={r}><img src={github}      alt="GitHub"/></a>
                     <a style={SocialIconDefault} href="https://www.linkedin.com/in/ZachShea"    target={t} rel={r}><img src={linkedin}    alt="LinkedIn"/></a>
