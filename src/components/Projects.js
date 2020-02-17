@@ -108,7 +108,7 @@ class Projects extends React.Component {
                         <div style={TitleDesktop}>Projects</div>
                         <div style={CardsDesktop}>
                             <Card style={Card1Desktop} description="The Music Network" title="Zuke Music" background={heroZuke} icon={iconZuke} link="/zuke-music" openNewWindow={false}/>
-                            <Card style={Card2} description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://www.bostechusa.com/medi-iot/"/>
+                            <Card style={Card2} description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://www.bostechusa.com/solutions"/>
                             <Card style={Card3} description="Artist Portfolio Website" title="Hoekstra Design Group" background={heroHDG} link="http://www.hoekstradesigngroup.com"/>
                             <Card style={Card4} description="Informal, Remote Caregiving" title="Coming Soon" background={heroCarebit} icon={iconCarebit}/>
                             <Card style={Card5} description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
@@ -122,7 +122,7 @@ class Projects extends React.Component {
                         <div style={TitleDefault}>Projects</div>
                         <div style={CardsDefault}>
                             <Card style={Card1Default} description="The Music Network" title="Zuke Music" background={heroZuke} icon={iconZuke} link="/zuke-music" openNewWindow={false}/>
-                            <Card description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://www.bostechusa.com/medi-iot/"/>
+                            <Card description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://www.bostechusa.com/solutions"/>
                             <Card description="Artist Portfolio Website" title="Hoekstra Design Group" background={heroHDG} link="http://www.hoekstradesigngroup.com"/>
                             <Card description="Informal, Remote Caregiving" title="Coming Soon" background={heroCarebit} icon={iconCarebit}/>
                             <Card description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
