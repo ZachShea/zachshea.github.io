@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage.js';
 import NotFoundPage from './pages/NotFoundPage.js';
 import MePage from './pages/MePage.js';
 import ZukeProjectPage from './pages/projects/ZukeProjectPage.js';
+import CarebitProjectPage from './pages/projects/CarebitProjectPage.js';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path="/" exact component={HomePage} />
             <Route path="/(me|about)" component={MePage} />
             <Route path="/(zuke-music|zuke)" component={ZukeProjectPage} />
+            <Route path="/carebit" component={CarebitProjectPage} />
             <Route component={NotFoundPage} />
           </Switch>
           

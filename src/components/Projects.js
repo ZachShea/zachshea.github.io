@@ -1,11 +1,11 @@
 import React from 'react';
 import Size from '../Size.js';
 import Card from './Card.js';
-import heroZuke from "../assets/heros/hero-zuke.png"
-import heroMedi from "../assets/heros/hero-medi.png"
-import heroHDG from "../assets/heros/hero-hdg.png"
-import heroCarebit from "../assets/heros/hero-carebit.png"
-import heroProjects from "../assets/heros/hero-projects.png"
+import heroZuke from "../assets/heros/hero-zuke.jpg"
+import heroMedi from "../assets/heros/hero-medi.jpg"
+import heroHDG from "../assets/heros/hero-hdg.jpg"
+import heroCarebit from "../assets/heros/hero-carebit.jpg"
+import heroProjects from "../assets/heros/hero-projects.jpg"
 import iconZuke from "../assets/icons/icon-zuke.svg"
 import iconMedi from "../assets/icons/icon-medi.svg"
 import iconCarebit from "../assets/icons/icon-carebit.svg"
@@ -108,10 +108,10 @@ class Projects extends React.Component {
                         <div style={TitleDesktop}>Projects</div>
                         <div style={CardsDesktop}>
                             <Card style={Card1Desktop} description="The Music Network" title="Zuke Music" background={heroZuke} icon={iconZuke} link="/zuke-music" openNewWindow={false}/>
-                            <Card style={Card2} description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://www.bostechusa.com/solutions"/>
-                            <Card style={Card3} description="Artist Portfolio Website" title="Hoekstra Design Group" background={heroHDG} link="http://www.hoekstradesigngroup.com"/>
-                            <Card style={Card4} description="Informal, Remote Caregiving" title="Coming Soon" background={heroCarebit} icon={iconCarebit}/>
-                            <Card style={Card5} description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
+                            <Card style={Card2} description="Remote Informal Caregiving" title="Carebit" background={heroCarebit} icon={iconCarebit} link="/carebit" openNewWindow={false}/>
+                            <Card style={Card3} description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://www.bostechusa.com/solutions"/>
+                            <Card style={Card4} description="Artist Portfolio Website" title="Hoekstra Design Group" background={heroHDG} link="http://www.hoekstradesigngroup.com"/>
+                            <Card disabled style={Card5} description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
                         </div>
                     </div>
                 </div>
@@ -122,10 +122,10 @@ class Projects extends React.Component {
                         <div style={TitleDefault}>Projects</div>
                         <div style={CardsDefault}>
                             <Card style={Card1Default} description="The Music Network" title="Zuke Music" background={heroZuke} icon={iconZuke} link="/zuke-music" openNewWindow={false}/>
+                            <Card description="Remote Informal Caregiving" title="Carebit" background={heroCarebit} icon={iconCarebit} link="/carebit" openNewWindow={false}/>
                             <Card description="Monitor Smarter ™" title="Medi-IoT" background={heroMedi} icon={iconMedi} link="https://www.bostechusa.com/solutions"/>
                             <Card description="Artist Portfolio Website" title="Hoekstra Design Group" background={heroHDG} link="http://www.hoekstradesigngroup.com"/>
-                            <Card description="Informal, Remote Caregiving" title="Coming Soon" background={heroCarebit} icon={iconCarebit}/>
-                            <Card description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
+                            <Card disabled description="More Projects" title="Coming Soon" background={heroProjects} icon={iconProjects}/>
                         </div>
                     </div>
                 </div>

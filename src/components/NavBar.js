@@ -5,6 +5,8 @@ import Size from '../Size.js';
 import logo from "../assets/logo.svg";
 import menu from "../assets/icons/menu.svg"
 
+import '../Hoverable.css'
+
 const Item = {
     alignSelf: "center"
 }
@@ -15,6 +17,8 @@ const ItemFlex = {
 }
 
 const LogoDefault = {
+    padding: "20px",
+    margin: "-20px",
     width: "22px",
     height: "auto"
 }
@@ -28,9 +32,15 @@ const LinkStyle = {
     textDecoration: "none"
 }
 
+const OpenMenuButton = {
+    padding: "20px",
+    margin: "-20px",
+    cursor: 'pointer'
+}
+
 class NavBar extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             color: "transparent", 
             height: "100px",
@@ -88,27 +98,27 @@ class NavBar extends React.Component {
       }
 
       const LogoDesktop = {
-          width: this.state.logoWidth,
-          height: "auto"
+        width: this.state.logoWidth,
+        height: "auto"
       }
-        
+    
       return (
         <div style={Main}>
             <Size.Desktop>
                 <div style={ContainerDesktop}>
-                    <HashLink style={Item} smooth to="/#home"><img src={logo} alt="Home" style={LogoDesktop}/></HashLink>
+                    <HashLink class="HoverOpacity70" style={Item} smooth to="/#home"><img src={logo} alt="Home" style={LogoDesktop}/></HashLink>
                     <div style={Item}>
-                        <HashLink style={LinkStyle} smooth to="/me#hero">Me</HashLink>
-                        <HashLink style={LinkStyle} smooth to="/#projects">Projects</HashLink>
-                        {/* <HashLink style={LinkStyle} smooth to="/#visuals">Visuals</HashLink>
-                        <HashLink style={LinkStyle} smooth to="/#music">Music</HashLink> */}
+                        <HashLink class="HoverOpacity70" style={LinkStyle} smooth to="/me#hero">Me</HashLink>
+                        <HashLink class="HoverOpacity70" style={LinkStyle} smooth to="/#projects">Projects</HashLink>
+                        <HashLink class="HoverOpacity70" style={LinkStyle} smooth to="/#visuals">Visuals</HashLink>
+                        <HashLink class="HoverOpacity70" style={LinkStyle} smooth to="/#music">Music</HashLink>
                     </div>
                 </div>
             </Size.Desktop>
             <Size.Default>
                 <div style={ContainerDefault}>
-                    <div style={ItemFlex}><img style={{cursor:'pointer'}} src={menu} alt="Open Menu" onClick={this.props.openMenu}/></div>
-                    <HashLink style={Item} smooth to="/#home"><img src={logo} alt="Home" style={LogoDefault}/></HashLink>
+                    <div style={ItemFlex}><img class="HoverOpacity70" style={OpenMenuButton} src={menu} alt="Open Menu" onClick={this.props.openMenu}/></div>
+                    <HashLink class="HoverOpacity70" style={Item} smooth to="/#home"><img src={logo} alt="Home" style={LogoDefault}/></HashLink>
                     <div style={ItemFlex}/>
                 </div>
             </Size.Default>

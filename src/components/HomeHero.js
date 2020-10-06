@@ -6,6 +6,8 @@ import hero from '../assets/heros/hero-home.jpg'
 import chevron from '../assets/icons/chevron-right.svg'
 import scrollIndicator from '../assets/icons/scroll-indicator.svg'
 
+import '../Hoverable.css'
+
 const ContainerBig = {
   maxWidth: "1080px",
   marginLeft: "auto",
@@ -117,7 +119,7 @@ class HomeHero extends React.Component {
             <div style={MainBig}>
                 <div style={ContainerBig}>
                     <div style={TitleDesktop}>Digital Product Maker and Musician</div>
-                    <Link style={ButtonBig} to="/me">
+                    <Link class="HoverOpacity70" style={ButtonBig} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
                     </Link>
                 </div>
@@ -128,7 +130,7 @@ class HomeHero extends React.Component {
             <div style={MainBig}>
                 <div style={ContainerBig}>
                     <div style={TitleTablet}>Digital Product Maker and Musician</div>
-                    <Link style={ButtonBig} to="/me">
+                    <Link class="HoverOpacity70" style={ButtonBig} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
                     </Link>
                 </div>
@@ -139,7 +141,7 @@ class HomeHero extends React.Component {
             <div style={MainMobile}>
                 <div style={ContainerMobile}>
                     <div style={TitleMobile}>Digital Product Maker and Musician</div>
-                    <Link style={ButtonMobile} to="/me">
+                    <Link class="HoverOpacity70" style={ButtonMobile} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
                     </Link>
                 </div>

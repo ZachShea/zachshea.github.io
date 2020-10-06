@@ -3,6 +3,8 @@ import { HashLink } from 'react-router-hash-link';
 
 import menuClose from "../assets/icons/menu-close.svg"
 
+import '../Hoverable.css'
+
 const Main = {
     width: "100%",
     backgroundColor: "rgba(255, 255, 255, 0.98)",
@@ -19,6 +21,12 @@ const Container = {
     padding: "25px 23px 25px 23px"
 }
 
+const CloseMenuButton = {
+    padding: "20px",
+    margin: "-20px",
+    cursor: 'pointer'
+}
+
 const LinksList = {
     display: "flex",
     flexDirection: "column",
@@ -26,7 +34,9 @@ const LinksList = {
 }
 
 const LinkStyle = {
+    margin: "auto",
     marginBottom: "20px",
+    minWidth: "100px",
     color: "black",
     fontSize: "20px",
     fontWeight: "500",
@@ -39,12 +49,12 @@ class NavMenu extends React.Component {
       return (
         <div style={Main} id="projects">
             <div style={Container}>
-                <img style={{cursor:'pointer'}} src={menuClose} alt="Close Menu" onClick={this.props.closeMenu}/>
+                <img class="HoverOpacity50" style={CloseMenuButton} src={menuClose} alt="Close Menu" onClick={this.props.closeMenu}/>
                 <div style={LinksList}>
-                    <HashLink style={LinkStyle} smooth to="/me#hero" onClick={this.props.closeMenu}>Me</HashLink>
-                    <HashLink style={LinkStyle} smooth to="/#projects" onClick={this.props.closeMenu}>Projects</HashLink>
-                    {/* <HashLink style={LinkStyle} smooth to="/#visuals" onClick={this.props.closeMenu}>Visuals</HashLink>
-                    <HashLink style={LinkStyle} smooth to="/#music" onClick={this.props.closeMenu}>Music</HashLink> */}
+                    <HashLink class="HoverOpacity50" style={LinkStyle} smooth to="/me#hero" onClick={this.props.closeMenu}>Me</HashLink>
+                    <HashLink class="HoverOpacity50" style={LinkStyle} smooth to="/#projects" onClick={this.props.closeMenu}>Projects</HashLink>
+                    <HashLink class="HoverOpacity50" style={LinkStyle} smooth to="/#visuals" onClick={this.props.closeMenu}>Visuals</HashLink>
+                    <HashLink class="HoverOpacity50" style={LinkStyle} smooth to="/#music" onClick={this.props.closeMenu}>Music</HashLink>
                 </div>
             </div>
         </div>

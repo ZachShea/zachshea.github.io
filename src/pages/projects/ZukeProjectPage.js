@@ -10,7 +10,7 @@ import QuoteBodyItem from '../../components/body/QuoteBodyItem.js';
 import SpacerBodyItem from '../../components/body/SpacerBodyItem.js';
 
 import icon from "../../assets/icons/icon-zuke.svg"
-import heroImage from '../../assets/heros/hero-zuke.png'
+import heroImage from '../../assets/heros/hero-zuke.jpg'
 import ssLogo from '../../assets/images/logo-ss.svg'
 import ssLogoSmall from '../../assets/images/logo-ss-small.svg'
 
@@ -63,12 +63,10 @@ class ZukeProjectPage extends React.Component {
             icon={icon} 
             heroImage={heroImage}
             client={{
-                name: "Zuke Music, Inc.", 
-                link: "https://zukemusic.com"
+                name: "Zuke Music, Inc."
             }}
             product={{
-                name: "Zuke Music for iOS", 
-                link: "https://itunes.apple.com/us/app/zuke-music/id1136042367"
+                name: "Zuke Music for iOS"
             }}
             roles={<div>
                 Co-founder<br/>
@@ -77,8 +75,11 @@ class ZukeProjectPage extends React.Component {
             </div>}
             content={<div>
                 <TitleBodyItem content="Client"/>
-                <NormalBodyItem content="Zuke Music, Inc. is a startup founded by Arielle Cohen and I in October 2015. The company’s product, Zuke Music, is an iOS application that allows those involved in the music industry to network and collaborate with one another."/>
+                <NormalBodyItem content="Zuke Music, Inc. is a startup founded by Arielle Cohen and I in October 2015. The company’s product, Zuke Music, was an iOS application that allowed those involved in the music industry to network and collaborate with one another."/>
                 <QuoteBodyItem content="At Zuke Music, our goal is to help people in the music industry connect with music pros to take their careers to the next level and create the ultimate music collaborations."/>
+                <SpacerBodyItem/>
+                <TitleBodyItem content="Goal"/>
+                <NormalBodyItem content="As we were still deciding on the direction for our business, Arielle and I found that networking opportunities for amateur musicians were slim, and it was difficult for new artists to find people to collaborate with. We created Zuke Music to solve these problems, and as we received feedback from our users, continued to design and implement features to address additional music industry pain points."/>
                 <SpacerBodyItem/>
                 <TitleBodyItem content="Role"/>
                 <NormalBodyItem content={<div>I took on many roles in this project. Since Arielle and I cofounded the company, we worked together to generate ideas and develop our business model. We took Zuke Music through the <ExternalLink text="I-Corps" url={icorpsLink}/> program at the University of Central Florida, and then through the <ExternalLink text="Starter Studio" url={ssLink}/> business accelerator program in downtown Orlando.</div>}/>
@@ -100,23 +101,21 @@ class ZukeProjectPage extends React.Component {
                     </div>
                 </div>
                 <SpacerBodyItem/>
-                <NormalBodyItem content="I also led the design and development of the iOS app. During the development of our business, I created wireframes, mockups, and interactive prototypes. After many iterations and customer interviews later, as our business model became more solidified, I put on my developer hat and began writing Swift code. I worked with our backend guru, Brandon Ashley, to turn user flows into requirements for our database and RESTful API, which the iOS app now calls."/>
-                <SpacerBodyItem/>
-                <TitleBodyItem content="Goal"/>
-                <NormalBodyItem content="As we were still deciding on the direction for our business, Arielle and I found that networking opportunities for amateur musicians were slim, and it was difficult for new artists to find people to collaborate with. We created Zuke Music to solve these problems, and as we received feedback from our users, continued to design and implement features to address additional music industry pain points."/>
+                <NormalBodyItem content="I also led the design and development of the iOS app. During the development of our business, I created wireframes, mockups, and interactive prototypes. After many iterations and customer interviews later, as our business model became more solidified, I put on my developer hat and began writing Swift code. I worked with our backend guru, Brandon, to turn user flows into requirements for our database and REST API."/>
                 <SpacerBodyItem/>
                 <TitleBodyItem content="Experience"/>
                 <NormalBodyItem content={<div>
                     This was the first project I worked on that had such a lengthy and intensive design phase. In previous projects, much of the design was completed quickly and without any sort of user testing, since I was eager to begin development and deadlines were coming up. However, the design phase for Zuke lasted around eight months before beginning development, and resulted in around 90 mocked-up screens.<br/><br/>
                     Because we were still developing our business model and collecting customer feedback, we pivoted multiple times within these eight months, resulting in multiple redesigns of the application. However, each time we reimagined the Zuke app, we were more satisfied with the direction that was taken. We finally began development in Summer 2016.<br/><br/>
-                    Zuke was also the largest project I’ve worked on in terms of the amount of code. Imagine one frontend and one backend developer turning around 90 screens into a functional app. It took almost 10 months to complete the project, and Zuke finally launched March 2017.
+                    Zuke was also the largest project I’ve worked on in terms of the amount of code. One frontend developer (that’s me) and one backend developer had turn 90 different screens into a functional app. It took almost 10 months to complete this project, and at last, Zuke launched in March 2017.
                 </div>}/>
                 <SpacerBodyItem/>
                 <TitleBodyItem content="Outcome"/>
                 <NormalBodyItem content={<div>
-                    From working on Zuke, I’ve learned an extraordinary amount about developing business models, establishing product-market fit, user experience and interface design, iOS app development, and working with RESTful APIs. I’ve also seen an increase in my proficiency when designing digital products and writing code.<br/><br/>
-                    However, I’ve also learned the importance of an <ExternalLink text="MVP" url="https://en.wikipedia.org/wiki/Minimum_viable_product"/> and avoiding <ExternalLink text="feature creep" url="https://en.wikipedia.org/wiki/Feature_creep"/>. Zuke was a huge app for one designer and a two person dev team to take on. It was very tempting to build everything all at once and release a fully-featured app from the start, but it resulted in delaying our release date, and therefore delaying the feedback we would receive from our users. I believe it would have been more beneficial to start small, with a couple of key features that persisted through the design phase into development.<br/><br/>
-                    In the end, we created a product that we believe is helpful to many people looking for connections and collaborations in the music industry, and we’ve continued to push out new features to add value to the app, given feedback from our users.
+                    From working on Zuke, I’ve learned an extraordinary amount about developing business models, establishing product-market fit, user experience and interface design, iOS app development, and working with REST APIs. I’ve also seen an increase in my proficiency when designing digital products and writing code.<br/><br/>
+                    However, I’ve also learned the importance of an <ExternalLink text="MVP" url="https://en.wikipedia.org/wiki/Minimum_viable_product"/> and avoiding <ExternalLink text="feature creep" url="https://en.wikipedia.org/wiki/Feature_creep"/>. Zuke was a huge app for one designer and two developers to take on. Because of our passion for this project, it was very tempting to build everything all at once and release a fully-featured app from the start. This resulted in delaying our release date, and therefore delaying the feedback we would later receive from our users. It would have been more beneficial to start small, focusing on just a couple of key features, both in the design and development phases.<br/><br/>
+                    In the end, we created a product that served about 8,000 users, helping them find connections and collaborations in the music industry. We continued to push out new features to add value to the app, given feedback from our users, and began development of a Zuke Music web app. However, this came to an unfortunate close, as I began to shift my priorities toward graduation and my own personal growth. Without someone to maintain and support the project, Zuke Music is no longer available to the public.<br/><br/>
+                    If you would like to be that someone, go ahead and contact me at <a href="mailto:zacharyshea@icloud.com">zacharyshea@icloud.com</a>. I would love for someone to bring this project back and run with it.
                 </div>}/>
             </div>}
         />
