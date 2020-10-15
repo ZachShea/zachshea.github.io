@@ -31,11 +31,14 @@ const ContainerMobile = {
   flexDirection: "column"
 }
 
+const MeLink = {
+  margin: "auto"
+}
+
 const MeDesktop = {
   width: "80px",
   height: "80px",
   borderRadius: "40px",
-  margin: "auto",
   marginTop: "156px",
 }
 
@@ -43,7 +46,6 @@ const MeTablet = {
   width: "70px",
   height: "70px",
   borderRadius: "35px",
-  margin: "auto",
   marginTop: "128px",
 }
 
@@ -51,7 +53,6 @@ const MeMobile = {
   width: "60px",
   height: "60px",
   borderRadius: "30px",
-  margin: "auto",
   marginTop: "108px",
 }
 
@@ -143,7 +144,7 @@ class HomeHero extends React.Component {
           <Size.Desktop>
             <div style={MainBig}>
                 <div style={ContainerBig}>
-                    <Link class="HoverOpacity90" to="/me">
+                    <Link class="HoverOpacity90" style={MeLink} to="/me">
                       <img style={MeDesktop} src={me} alt=""></img>
                     </Link>
                     <div style={TitleDesktop}>Digital Product Maker and Musician</div>
@@ -157,7 +158,7 @@ class HomeHero extends React.Component {
           <Size.Tablet>
             <div style={MainBig}>
                 <div style={ContainerBig}>
-                    <Link class="HoverOpacity90" to="/me">
+                    <Link class="HoverOpacity90" style={MeLink} to="/me">
                       <img style={MeTablet} src={me} alt=""></img>
                     </Link>
                     <div style={TitleTablet}>Digital Product Maker and Musician</div>
@@ -171,7 +172,7 @@ class HomeHero extends React.Component {
           <Size.Mobile>
             <div style={MainMobile}>
                 <div style={ContainerMobile}>
-                    <Link class="HoverOpacity90" to="/me">
+                    <Link class="HoverOpacity90" style={MeLink} to="/me">
                       <img style={MeMobile} src={me} alt=""></img>
                     </Link>
                     <div style={TitleMobile}>Digital Product Maker and Musician</div>
