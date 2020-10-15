@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import Size from '../Size.js'
+import me from '../assets/images/me.jpg'
 import hero from '../assets/heros/hero-home.jpg'
 import chevron from '../assets/icons/chevron-right.svg'
 import scrollIndicator from '../assets/icons/scroll-indicator.svg'
@@ -30,12 +31,36 @@ const ContainerMobile = {
   flexDirection: "column"
 }
 
+const MeDesktop = {
+  width: "80px",
+  height: "80px",
+  borderRadius: "40px",
+  margin: "auto",
+  marginTop: "156px",
+}
+
+const MeTablet = {
+  width: "70px",
+  height: "70px",
+  borderRadius: "35px",
+  margin: "auto",
+  marginTop: "128px",
+}
+
+const MeMobile = {
+  width: "60px",
+  height: "60px",
+  borderRadius: "30px",
+  margin: "auto",
+  marginTop: "108px",
+}
+
 const TitleDesktop = {
   fontSize: "80px",
   fontWeight: "700",
   maxWidth: "880px",
   letterSpacing: "3px",
-  marginTop: "236px",
+  marginTop: "36px",
   marginBottom: "82px",
   alignSelf: "center"
 }
@@ -45,7 +70,7 @@ const TitleTablet = {
   fontWeight: "700",
   maxWidth: "880px",
   letterSpacing: "3px",
-  marginTop: "198px",
+  marginTop: "30px",
   marginBottom: "70px",
   alignSelf: "center"
 }
@@ -55,7 +80,7 @@ const TitleMobile = {
   fontWeight: "700",
   maxWidth: "450px",
   letterSpacing: "2px",
-  marginTop: "163px",
+  marginTop: "24px",
   marginBottom: "50px",
   alignSelf: "center"
 }
@@ -118,6 +143,9 @@ class HomeHero extends React.Component {
           <Size.Desktop>
             <div style={MainBig}>
                 <div style={ContainerBig}>
+                    <Link class="HoverOpacity90" to="/me">
+                      <img style={MeDesktop} src={me} alt=""></img>
+                    </Link>
                     <div style={TitleDesktop}>Digital Product Maker and Musician</div>
                     <Link class="HoverOpacity70" style={ButtonBig} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
@@ -129,6 +157,9 @@ class HomeHero extends React.Component {
           <Size.Tablet>
             <div style={MainBig}>
                 <div style={ContainerBig}>
+                    <Link class="HoverOpacity90" to="/me">
+                      <img style={MeTablet} src={me} alt=""></img>
+                    </Link>
                     <div style={TitleTablet}>Digital Product Maker and Musician</div>
                     <Link class="HoverOpacity70" style={ButtonBig} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
@@ -140,6 +171,9 @@ class HomeHero extends React.Component {
           <Size.Mobile>
             <div style={MainMobile}>
                 <div style={ContainerMobile}>
+                    <Link class="HoverOpacity90" to="/me">
+                      <img style={MeMobile} src={me} alt=""></img>
+                    </Link>
                     <div style={TitleMobile}>Digital Product Maker and Musician</div>
                     <Link class="HoverOpacity70" style={ButtonMobile} to="/me">
                       Get to know me<img style={Chevron} src={chevron} alt=""/>
