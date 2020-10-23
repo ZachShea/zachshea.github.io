@@ -28,6 +28,16 @@ function Contact() {
   </div>);
 }
 
+function Updated() {
+  let date = new Date(2019, 3, 17);
+  let formattedDate = date.toLocaleDateString("en-US", {
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric'
+  })
+  return "Updated on " + formattedDate
+}
+
 
 const ContainerDesktop = {
   maxWidth: "1080px",
@@ -81,6 +91,20 @@ const SpacerDefault = {
     height: "50px"
 }
 
+const FootnoteDesktop = {
+  fontSize: "20px",
+  fontWeight: "500",
+  letterSpacing: "1px",
+  color: "rgba(0,0,0,.5)"
+}
+
+const FootnoteDefault = {
+  fontSize: "17px",
+  fontWeight: "500",
+  letterSpacing: "1px",
+  color: "rgba(0,0,0,.5)"
+}
+
 class MeContent extends React.Component {
     render() {
       const MainDesktop = {
@@ -109,8 +133,10 @@ class MeContent extends React.Component {
                         <div style={SpacerDesktop}/>
                         <div style={TitleDesktop}>Musician</div>
                         <div style={BodyDesktop}><Musician/></div>
-                        <br/><br/><br/><br/><br/><br/>
+                        <div style={SpacerDesktop}/>
                         <div style={BodyDesktop}><Contact/></div>
+                        <div style={SpacerDesktop}/>
+                        <div style={FootnoteDesktop}><Updated/></div>
                     </div>
                 </div>
             </Size.Desktop>
@@ -122,8 +148,10 @@ class MeContent extends React.Component {
                         <div style={SpacerDefault}/>
                         <div style={TitleDefault}>Musician</div>
                         <div style={BodyDefault}><Musician/></div>
-                        <br/><br/><br/><br/>
+                        <div style={SpacerDefault}/>
                         <div style={BodyDefault}><Contact/></div>
+                        <div style={SpacerDefault}/>
+                        <div style={FootnoteDefault}><Updated/></div>
                     </div>
                 </div>
             </Size.Default>
